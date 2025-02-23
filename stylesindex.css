@@ -106,7 +106,7 @@ nav ul li a:hover {
     color: white;
 }
 
-hero h1 .bot {
+.hero h1 .bot {
     color: #444;
 }
 
@@ -137,14 +137,12 @@ hero h1 .bot {
 
 .project-description h2 {
     font-family: 'Orbitron', sans-serif;
-    font-size: 2.5rem;
+    font-size: clamp(1.5rem, 5vw, 2.5rem); /* Ajuste dinámico */
     font-weight: 700;
     color: #444;
     letter-spacing: 2px;
     margin-bottom: 20px;
-    word-wrap: break-word; 
-    overflow-wrap: break-word;
-    word-break: break-word;
+    text-align: center;
 }
 
 .project-description p {
@@ -164,31 +162,17 @@ hero h1 .bot {
 
 .impact-container h2 {
     font-family: 'Orbitron', sans-serif;
-    font-size: 2.5rem;
+    font-size: clamp(1.5rem, 5vw, 2.5rem); /* Ajuste dinámico */
     font-weight: 700;
     color: #444;
     letter-spacing: 2px;
     margin-bottom: 20px;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    word-break: break-word;
+    text-align: center;
 }
 
 .impact-container p {
     text-align: justify;
     line-height: 1.6;
-}
-
-/* Evitar desbordamiento del texto largo */
-.project-description h2,
-.impact-container h2 {
-    max-width: 100%;
-    display: inline-block;
-    text-align: center;
-    white-space: normal;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    word-break: break-word;
 }
 
 /* Estilo del pie de página */
@@ -224,6 +208,6 @@ footer a:hover {
 @media (max-width: 768px) {
     .project-description h2,
     .impact-container h2 {
-        font-size: 2rem; /* Reduce el tamaño del texto para evitar desbordes */
+        font-size: clamp(1.5rem, 5vw, 2.2rem); /* Ajuste adicional para móviles */
     }
 }
