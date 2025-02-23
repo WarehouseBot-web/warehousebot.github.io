@@ -137,12 +137,11 @@ nav ul li a:hover {
 
 .project-description h2 {
     font-family: 'Orbitron', sans-serif;
-    font-size: clamp(1.5rem, 5vw, 2.5rem); /* Ajuste dinámico */
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
     font-weight: 700;
     color: #444;
     letter-spacing: 2px;
     margin-bottom: 20px;
-    text-align: center;
 }
 
 .project-description p {
@@ -162,12 +161,11 @@ nav ul li a:hover {
 
 .impact-container h2 {
     font-family: 'Orbitron', sans-serif;
-    font-size: clamp(1.5rem, 5vw, 2.5rem); /* Ajuste dinámico */
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
     font-weight: 700;
     color: #444;
     letter-spacing: 2px;
     margin-bottom: 20px;
-    text-align: center;
 }
 
 .impact-container p {
@@ -202,12 +200,5 @@ footer a:hover {
     }
     .hero-text {
         max-width: 50%;
-    }
-}
-
-@media (max-width: 768px) {
-    .project-description h2,
-    .impact-container h2 {
-        font-size: clamp(1.5rem, 5vw, 2.2rem); /* Ajuste adicional para móviles */
     }
 }
