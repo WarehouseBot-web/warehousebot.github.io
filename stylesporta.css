@@ -1,0 +1,163 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;               /* Aplica Flexbox */
+    flex-direction: column;      /* Organiza los elementos en columna */
+    height: 100vh;               /* Asegura que el body ocupe toda la altura de la pantalla */
+}
+
+/* Asegura que el título principal esté destacado */
+h1 {
+    font-size: 36px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Descripción del portafolio */
+.portfolio-description {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Estilos del contenedor de los proyectos */
+.portfolio-projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+/* Estilo para cada tarjeta de proyecto */
+.project-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Imagen del proyecto */
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Nombre y descripción del proyecto */
+.project-card h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 16px;
+    color: #777;
+}
+
+/* Navbar */
+header {
+    background-color: #343a40;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar-nav li {
+    margin-left: 20px;
+}
+
+.navbar-nav li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+/* Efecto hover */
+.navbar-nav li a:hover {
+    color: #06d2dd !important;
+    font-weight: bold;
+}
+
+.navbar-nav li a.active-link {
+    color: #06d2dd !important;
+    font-weight: bold;
+}
+
+/* Footer siempre abajo */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: auto; /* Esto asegura que el pie se quede al final */
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsividad */
+@media (min-width: 768px) {
+    .portfolio-projects {
+        justify-content: space-around;
+    }
+
+    .project-card {
+        width: 280px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .portfolio-description {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .portfolio-projects {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .portfolio-description {
+        font-size: 18px;
+    }
+}
