@@ -3,59 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WarehouseBot</title>
+    <title>Systemware Solutions</title>
+    <link rel="icon" href="/resources/icono_logo.ico" type="image/x-icon"> <!-- Favicon agregado -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/styles/styles.css">
-    <style>
-        .active-link {
-            color: #06d2dd !important;
-            font-weight: bold;
-        }
-        .nav-link:hover {
-            color: #06d2dd !important;
-            transition: color 0.3s ease;
-        }
-        .hero-content {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 20px;
-        }
-        .hero img {
-            max-width: 50%;
-            border-radius: 10px;
-        }
-        .hero-text {
-            max-width: 50%;
-        }
-    </style>
+    <link rel="stylesheet" href="/styles/stylesindex.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="bg-dark py-3">
-        <nav class="container d-flex justify-content-between align-items-center">
+        <nav class="navbar navbar-expand-lg navbar-dark container">
             <div class="logo">
-                <img src="/resources/logo.png" alt="Logo WarehouseBot" class="img-fluid" style="height: 50px;">
+                <img src="/resources/logoSystemware.png" alt="Logo WarehouseBot" class="img-fluid" style="height: 50px;">
             </div>
-            <ul class="nav">
-                <li class="nav-item"><a href="/views/index.html" class="nav-link text-white" id="inicio">Inicio</a></li>
-                <li class="nav-item"><a href="/views/nosotros.html" class="nav-link text-white" id="nosotros">Sobre Nosotros</a></li>
-                <li class="nav-item"><a href="/views/portafolio.html" class="nav-link text-white" id="portafolio">Portafolio</a></li>
-                <li class="nav-item"><a href="/views/motivadores.html" class="nav-link text-white" id="motivadores">Motivadores</a></li>
-            </ul>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="/views/index.html" class="nav-link text-white" id="inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/views/nosotros.html" class="nav-link text-white" id="nosotros">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/views/motivadores.html" class="nav-link text-white" id="motivadores">Motivadores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/views/team.html" class="nav-link text-white" id="team">Nuestro equipo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/views/portafolio.html" class="nav-link text-white" id="portafolio">Portafolio</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
     
     <main class="container my-5">
-        <section class="hero text-center p-5 bg-white rounded shadow">
+        <section class="hero text-center p-5 rounded shadow">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h1 class="display-4 text-dark">WarehouseBot</h1>
-                    <p class="lead text-secondary">WarehouseBot es un innovador sistema de automatización logística que simula el funcionamiento de una ferretería inteligente. A través de un entorno virtual desarrollado en un motor gráfico, se representará una tienda de gran escala (EPA) donde robots autónomos realizarán tareas clave de gestión de inventario, incluyendo transporte de productos, organización de estanterías y reabastecimiento de mercancía.</p>
+                    <h1 class="display-4 text-dark"><span class="warehouse">Warehouse</span><span class="bot">Bot</span></h1>
+                    <a href="#contenido" class="btn btn-primary btn-conocer">Conocer más</a>
                 </div>
                 <img src="/resources/robot_fondo.png" alt="Robot WarehouseBot" class="img-fluid">
             </div>
         </section>
+
+        <div id="contenido" class="project-description">
+            <div class="container">
+                <h2>Acerca del proyecto:</h2>
+                <p>WarehouseBot es un innovador sistema de automatización logística que simula el funcionamiento de una ferretería inteligente. A través de un entorno virtual desarrollado en un motor gráfico, se representará una tienda de gran escala (EPA) donde robots autónomos realizarán tareas clave de gestión de inventario, incluyendo transporte de productos, organización de estanterías y reabastecimiento de mercancía.</p>
+            </div>
+        </div>
+
+        <div class="impact-container">
+            <div class="container">
+                <h2>¿Cómo funciona WarehouseBot?</h2>
+                <p>WarehouseBot opera mediante robots autónomos programados para realizar tareas esenciales dentro de un almacén o tienda. Utilizando sensores y algoritmos avanzados, los robots navegan de forma eficiente por el espacio, transportando productos desde los estantes hasta el área de empaquetado o para el reabastecimiento. Todo el proceso se gestiona y simula dentro de un motor gráfico, donde se visualizan las acciones de los robots y su interacción con el entorno virtual.</p>
+                <h2>Impacto esperado</h2>
+                <p>Se espera que WarehouseBot revolucione la gestión logística dentro de las ferreterías y almacenes, mejorando la eficiencia operativa, reduciendo costos laborales y optimizando el tiempo en tareas repetitivas. Además, la simulación virtual permite evaluar diferentes escenarios y mejorar el rendimiento de los robots antes de implementarlos en un entorno real, lo que ofrece un impacto positivo en la cadena de suministro.</p>
+            </div>
+        </div>
     </main>
+
+    <footer>
+        <p>&copy; 2025 Systemware Solutions. Todos los derechos reservados.</p>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
