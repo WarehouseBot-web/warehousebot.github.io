@@ -1,0 +1,174 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0e0e0;
+    color: #333;
+    background-image: url('/resources/fondolineas.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el cuerpo ocupe toda la altura de la pantalla */
+}
+
+/* Asegura que el título principal esté destacado */
+h1 {
+    font-size: 36px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Descripción del equipo */
+.team-description {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Estilos del contenedor de los miembros del equipo */
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+/* Estilo para cada miembro del equipo */
+.member {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 220px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.member:hover {
+    transform: translateY(-10px);
+}
+
+/* Imagen de cada miembro dentro de un círculo */
+.member img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 5px solid #06d2dd;  /* Borde con el color de la marca */
+}
+
+/* Nombre y cargo del miembro */
+.member h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.member p {
+    font-size: 16px;
+    color: #777;
+}
+
+/* Navbar */
+header {
+    background-color: #343a40;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar-nav li {
+    margin-left: 20px;
+}
+
+.navbar-nav li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+/* Efecto hover */
+.navbar-nav li a:hover {
+    color: #06d2dd !important;
+    font-weight: bold;
+}
+
+.navbar-nav li a.active-link {
+    color: #06d2dd !important;
+    font-weight: bold;
+}
+
+/* Hero content */
+.hero-content {
+    text-align: center;
+}
+
+/* Footer siempre abajo */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: auto; /* Empuja el footer hacia el fondo */
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsividad */
+@media (min-width: 768px) {
+    .team-members {
+        justify-content: space-around;
+    }
+
+    .member {
+        width: 250px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .team-description {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .team-members {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .member {
+        width: 280px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .team-description {
+        font-size: 18px;
+    }
+}

@@ -1,11 +1,166 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WarehouseBot - Nuestro equipo</title>
+    <link rel="stylesheet" href="stylesteam.css">
+    <link rel="stylesheet" href="stylesindex.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <h1>hola</h1>
+    <!-- Navbar -->
+    <header class="bg-dark py-3">
+        <nav class="navbar navbar-expand-lg navbar-dark container">
+            <div class="logo">
+                <img src="logosystemware.png" alt="Logo WarehouseBot" class="img-fluid" style="height: 50px;">
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link text-white" id="inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="nosotros.html" class="nav-link text-white" id="nosotros">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="motivadores.html" class="nav-link text-white" id="motivadores">Motivadores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="team.html" class="nav-link text-white active-link" id="team">Nuestro equipo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="portafolio.html" class="nav-link text-white" id="portafolio">Portafolio</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenido de la página de Nuestro equipo -->
+    <div class="container mt-5">
+        <h1>Nuestro Equipo</h1>
+        <p class="team-description">"Conoce al talentoso equipo de Systemware Solutions, el grupo detrás de WarehouseBot, trabajando arduamente para revolucionar la logística y la gestión de inventarios."</p>
+        
+        <!-- Miembros del equipo -->
+        <div class="team-members">
+            <div class="member">
+                <img src="jona.jpg" alt="Miembro 1">
+                <h3>Jonathan Flores</h3>
+                <p>Lider y Desarrollador</p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalJonathan">Conocer más</button>
+            </div>
+            <div class="member">
+                <img src="julio.png" alt="Miembro 2">
+                <h3>Julio Sánchez</h3>
+                <p>Julio Sánchez – Consultor SAP SD | Especialista en Optimización de Procesos y Tecnología Empresarial</p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalJulio">Conocer más</button>
+            </div>
+            <div class="member">
+                <img src="jimmy.jpg" alt="Miembro 3">
+                <h3>Jimmy Rivas</h3>
+                <p>Desarrollador</p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalJimmy">Conocer más</button>
+            </div>
+            <div class="member">
+                <img src="fredy.jpg" alt="Miembro 4">
+                <h3>Fredy Funes</h3>
+                <p>Jefe de Ventas</p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalFredy">Conocer más</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modales para cada miembro -->
+    <!-- Modal Jonathan -->
+    <div class="modal fade" id="modalJonathan" tabindex="-1" aria-labelledby="modalJonathanLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalJonathanLabel">Jonathan Flores - Lider y desarrollador</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Soy estudiante de Ingeniería en Sistemas y Redes Informáticas en la Universidad Gerardo Barrios, apasionado por la tecnología, la innovación y el desarrollo de software.</p>
+                    <p>Actualmente, imparto clases de informática en el Colegio Adventista San Miguel, donde transmito mi conocimiento a nuevas generaciones y sigo fortaleciendo mis habilidades técnicas y pedagógicas.</p>
+                    <p>Como líder del equipo de WarehouseBot, mi responsabilidad es coordinar el desarrollo del proyecto, asegurando una ejecución eficiente y alineada con nuestros objetivos. Además, me especializo en el desarrollo y gestión del software, garantizando que la simulación de nuestros robots autónomos funcione de manera óptima y realista.</p>
+                    <p>Mi objetivo es integrar soluciones tecnológicas avanzadas en entornos digitales, combinando robótica, inteligencia artificial y automatización para optimizar procesos en la industria. Estoy comprometido con la mejora continua y el aprendizaje constante, explorando nuevas herramientas y metodologías que nos permitan llevar WarehouseBot a un nivel superior.</p>
+                    <p>Este proyecto representa una gran oportunidad para innovar en la gestión de inventario mediante simulación, y me entusiasma liderar esta iniciativa.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Julio -->
+    <div class="modal fade" id="modalJulio" tabindex="-1" aria-labelledby="modalJulioLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalJulioLabel">Julio Cesar</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Consultor SAP con experiencia en la gestión y optimización de procesos empresariales, especializado en el módulo SAP SD y con amplio conocimiento en SAP MM, además de bases en FI, CO y PP. Mi enfoque se centra en la implementación de soluciones estratégicas que mejoran la eficiencia operativa y facilitan la toma de decisiones basadas en datos.</p>
+                    <p>Aunque aún no he finalizado mi carrera en Ingeniería en Sistemas y Redes Informáticas, mi deseo de superación y aprendizaje constante me impulsa a seguir creciendo tanto personal como profesionalmente. Me mantengo en actualización continua a través de cursos, diplomados, webinars y certificaciones, fortaleciendo mis conocimientos en áreas clave como SAP, análisis de datos, seguridad informática y gestión de procesos empresariales.</p>
+                    <p>Cuento con habilidades en análisis de datos, gestión de bases de datos y herramientas como Excel y Power BI, lo que me permite desarrollar modelos analíticos para potenciar el rendimiento empresarial. Asimismo, poseo conocimientos en seguridad de la información, aplicando normativas como ISO/IEC 27001 para garantizar la integridad y confidencialidad de los datos.</p>
+                    <p>Mi trayectoria profesional se caracteriza por la mejora continua, el pensamiento crítico y la capacidad de adaptación a entornos dinámicos. Busco constantemente la innovación tecnológica y la optimización de procesos, contribuyendo al crecimiento y éxito de las organizaciones con las que colaboro.</p>
+                    <h3>Áreas de Especialización</h3>
+                        <p>✔ SAP SD/MM – Configuración, implementación y optimización de procesos.</p>
+                        <p>✔ Business Intelligence – Análisis y visualización de datos con Power BI y Excel avanzado.</p>
+                        <p>✔ Bases de Datos – Gestión y modelado de datos en MySQL, MongoDB y Cassandra.</p>
+                        <p>✔ Seguridad de la Información – Aplicación de normativas ISO/IEC 27001.</p>
+                        <p>✔ Gestión de Proyectos – Enfoque en metodologías ágiles y mejora de procesos.</p>
+                    <h3>Intereses</h3>
+                        <p>📌 Consultoría SAP | 📌 Data Analytics | 📌 Seguridad Informática | 📌 Innovación Tecnológica | 📌 Música & Cultura</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Jimmy -->
+    <div class="modal fade" id="modalJimmy" tabindex="-1" aria-labelledby="modalJimmyLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalJimmyLabel">Jimmy Rivas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Soy un estudiante de Ingeniería en Sistemas y Redes Informáticas, con un fuerte interés en la tecnologías y la resolución de problemas. Desde que descubrí el mundo de la informática, me he enfocado en adquirir conocimientos sólidos en redes, seguridad informática, desarrollo de software y administración de sistemas.</p>
+                    <p>Mi objetivo es contribuir al desarrollo de soluciones tecnológicas que impacten positivamente en la sociedad, ya sea mediante la optimización de redes, la creación de aplicaciones eficientes o la implementación de medidas de seguridad robustas. Me gusta mantenerme actualizado con las últimas tendencias tecnológicas y siempre estoy dispuesto a aprender nuevas herramientas y lenguajes de programación.</p>
+                    <p>Además de mis estudios, disfruto participar en proyectos prácticos que me permiten aplicar lo que aprendo en el aula. Soy una persona proactiva, con habilidades para trabajar en equipo y una mentalidad orientada a resultados. En mi tiempo libre, me gusta explorar nuevas tecnologías y aprender de otros profesionales.</p>
+                    <p>Estoy emocionado por seguir creciendo en el campo de la ingeniería en sistemas y redes, y estoy abierto a nuevas oportunidades que me permitan expandir mis habilidades y contribuir al mundo de la tecnologías.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Fredy -->
+    <div class="modal fade" id="modalFredy" tabindex="-1" aria-labelledby="modalFredyLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalFredyLabel">Fredy Funes</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Soy estudiante de la Universidad Gerardo Barrios, curso el cuarto año de la carrera Ingeniera en Sistemas y Redes Informáticos.</p>
+                    <p>Estoy estudiando el idioma inglés en la Academia Europea, estoy cursando el nivel A1. También saqué un curso de Fundamentos de Programación en UDEMY ACADEMY, gracias al programa de Kodigo.</p>
+                    <p>Mi objetivo es ayudar al equipo a conseguir el mejor trabajo posible de este proyecto, que nuestro robot marqué un antes y un después en la industria, sobretodo, poder ser símbolo o referente de esta nueva etapa en el mundo de la tecnología, enfocado en los robots.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 WarehouseBot. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
