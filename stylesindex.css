@@ -6,9 +6,9 @@ body {
     background-color: #e0e0e0;
     color: #333;
     background-image: url('/resources/fondolineas.png');
-    background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
-    background-position: center center; /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 /* Estilo del header */
@@ -106,7 +106,7 @@ nav ul li a:hover {
     color: white;
 }
 
-.hero h1 .bot {
+hero h1 .bot {
     color: #444;
 }
 
@@ -126,15 +126,6 @@ nav ul li a:hover {
 }
 
 /* Estilo del contenido de la descripción del proyecto */
-.project-description h2 {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #444;
-    letter-spacing: 2px;
-    margin-bottom: 20px;
-}
-
 .project-description {
     margin-top: 50px;
     text-align: center;
@@ -142,6 +133,18 @@ nav ul li a:hover {
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.project-description h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #444;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
+    word-break: break-word;
 }
 
 .project-description p {
@@ -166,11 +169,26 @@ nav ul li a:hover {
     color: #444;
     letter-spacing: 2px;
     margin-bottom: 20px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
 }
 
 .impact-container p {
     text-align: justify;
     line-height: 1.6;
+}
+
+/* Evitar desbordamiento del texto largo */
+.project-description h2,
+.impact-container h2 {
+    max-width: 100%;
+    display: inline-block;
+    text-align: center;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
 }
 
 /* Estilo del pie de página */
@@ -200,5 +218,12 @@ footer a:hover {
     }
     .hero-text {
         max-width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .project-description h2,
+    .impact-container h2 {
+        font-size: 2rem; /* Reduce el tamaño del texto para evitar desbordes */
     }
 }
