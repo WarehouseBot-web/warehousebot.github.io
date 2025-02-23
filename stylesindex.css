@@ -1,6 +1,7 @@
-/* Estilo general */
+/* Establecer un peso de fuente consistente para todo el sitio */
 body {
     font-family: Arial, sans-serif;
+    font-weight: 400; /* Peso de la fuente consistente */
     margin: 0;
     padding: 0;
     background-color: #e0e0e0;

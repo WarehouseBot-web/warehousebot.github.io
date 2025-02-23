@@ -1,11 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Motivadores - WarehouseBot</title>
+    <link rel="stylesheet" href="stylesmotivadores.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <h1>hola</h1>
+    <!-- Navbar igual al de otras vistas -->
+    <header class="bg-dark py-3">
+        <nav class="navbar navbar-expand-lg navbar-dark container">
+            <div class="logo">
+                <img src="logosystemware.png" alt="Logo WarehouseBot" class="img-fluid" style="height: 50px;">
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link text-white" id="inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="nosotros.html" class="nav-link text-white" id="nosotros">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="motivadores.html" class="nav-link text-white" id="motivadores">Motivadores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="team.html" class="nav-link text-white" id="team">Nuestro equipo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="portafolio.html" class="nav-link text-white" id="portafolio">Portafolio</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Vista Motivadores -->
+    <div class="motivadores-container">
+        <header>
+            <h1>Nuestros Motivadores</h1>
+        </header>
+
+        <section class="descripcion">
+            <p>
+                En <b>SystemWare Solutions</b>, nuestro equipo está comprometido con la innovación y la optimización de procesos logísticos. A través de nuestro proyecto <b>WarehouseBot</b>, nos propusimos revolucionar la gestión de inventarios, combinando robótica avanzada, inteligencia artificial y simulación virtual en un entorno comercial realista.
+            </p>
+            <p>
+                Nos inspira la visión de crear soluciones inteligentes que no solo aumenten la productividad, sino que también reduzcan los errores y los tiempos de espera en la cadena de suministro. Creemos firmemente que la automatización es clave para transformar diversas industrias, y estamos comprometidos con llevar esa transformación al mundo real.
+            </p>
+            <p>
+                Como equipo de trabajo, estamos formados por estudiantes apasionados y comprometidos, con experiencia en robótica, programación, diseño de sistemas y gestión logística. Juntos, trabajamos en el desarrollo de <b>WarehouseBot</b>, un proyecto que no solo simula un entorno de ferretería inteligente, sino que también establece las bases para futuras implementaciones en el ámbito comercial real.
+            </p>
+            <p>
+                En <b>SystemWare Solutions</b>, no solo construimos tecnología; estamos creando el futuro de la logística. Nuestra misión es clara: queremos que <b>WarehouseBot</b> sea un referente en la transformación digital de la logística, ayudando a las empresas a optimizar sus recursos, mejorar la experiencia del cliente y ser más sostenibles.
+            </p>
+            <p>
+                Aspiramos a que <b>WarehouseBot</b> redefina el futuro de la logística con soluciones inteligentes, escalables y sostenibles, demostrando que la automatización no es solo una tendencia, sino una necesidad para la industria moderna.
+            </p>
+        </section>
+    </div>
+
+    <!-- Enlace a Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Script para el active link -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var currentPath = window.location.pathname;
+            var currentPage = currentPath.split("/").pop(); // Obtiene el nombre del archivo actual
+            var links = document.querySelectorAll('.nav-link');
+
+            links.forEach(function(link) {
+                if (link.getAttribute('href') === currentPage) {
+                    link.classList.add('active-link'); // Añade la clase 'active-link' al link correspondiente
+                }
+            });
+        });
+    </script>
 </body>
 </html>

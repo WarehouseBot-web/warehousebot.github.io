@@ -125,7 +125,21 @@ nav ul li a {
     transition: color 0.3s ease;
 }
 
+/* Cambiar color cuando está activo o seleccionado */
+nav ul li a:focus, 
+nav ul li a:active,
+nav ul li a.active-link {
+    color: #06d2dd !important; /* Azul celeste */
+    font-weight: bold;
+}
+
+/* Efecto hover */
 nav ul li a:hover {
+    color: #06d2dd !important;
+    font-weight: bold;
+}
+
+.active-link {
     color: #06d2dd !important;
     font-weight: bold;
 }

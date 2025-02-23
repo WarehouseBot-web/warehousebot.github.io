@@ -114,7 +114,7 @@
                 <div class="col-md-6 order-md-2">
                     <img src="6.png" alt="Características" class="img-fluid rounded">
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6"> 
                     <h2>Características</h2>
                     <ul>
                         <li>Trabajo en equipo y colaboración.</li>
@@ -127,12 +127,26 @@
     </div>
 
     <!-- Pie de página -->
-    <footer>
+    <footer class="bg-dark text-white text-center py-3">
         <p>&copy; 2025 Systemware Solutions. Todos los derechos reservados.</p>
     </footer>
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Función para activar el enlace correspondiente al URL actual
+        document.addEventListener("DOMContentLoaded", function() {
+            const currentPage = window.location.pathname.split('/').pop(); // Obtiene el nombre de la página actual
+            const navLinks = document.querySelectorAll('nav ul li a'); // Todos los enlaces del navbar
+
+            navLinks.forEach(link => {
+                // Si el href del enlace coincide con el nombre de la página actual, le agrega la clase active-link
+                if (link.getAttribute('href') === currentPage) {
+                    link.classList.add('active-link');
+                }
+            });
+        });
+    </script>
 
 </body>
 </html>
