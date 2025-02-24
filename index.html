@@ -35,6 +35,9 @@
                     <li class="nav-item">
                         <a href="portafolio.html" class="nav-link text-white" id="portafolio">Portafolio</a>
                     </li>
+                    <li class="nav-item">
+                        <a href="login.html" class="nav-link text-white" id="login">Login</a>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -85,5 +88,20 @@
             });
         });
     </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            if (!localStorage.getItem("loggedIn")) {
+                // Bloquear todas las pestañas excepto "Inicio" y "Login"
+                let restrictedLinks = document.querySelectorAll(".nav-item a:not(#inicio):not(#login)");
+                restrictedLinks.forEach(link => {
+                    link.classList.add("disabled");
+                    link.style.pointerEvents = "none"; // Evita que sean clickeables
+                    link.style.opacity = "0.5"; // Reduce la opacidad para indicar que están deshabilitados
+                });
+            }
+        });
+    </script>
+    
+    
 </body>
 </html>

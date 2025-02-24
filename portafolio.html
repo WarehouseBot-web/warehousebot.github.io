@@ -76,5 +76,19 @@
         <p>&copy; 2025 WarehouseBot. Todos los derechos reservados.</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            if (!localStorage.getItem("loggedIn")) {
+                // Solo permite acceder a la página de inicio
+                let restrictedLinks = document.querySelectorAll(".nav-item a:not(#inicio)");
+                restrictedLinks.forEach(link => {
+                    link.classList.add("disabled");
+                    link.style.pointerEvents = "none"; // Evita que sean clickeables
+                    link.style.opacity = "0.5"; // Reduce la opacidad para indicar que están deshabilitados
+                });
+            }
+        });
+    </script>
+    
 </body>
 </html>
