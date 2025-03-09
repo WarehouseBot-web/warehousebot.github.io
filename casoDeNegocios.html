@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WarehouseBot - Caso de Negocio</title>
+    
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="casoNegocio.css">
+    <link rel="stylesheet" href="stylesporta.css">
+    <link rel="stylesheet" href="stylesindex.css">
+    
+    <link rel="icon" href="icono_logo.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="bg-dark py-3">
+        <nav class="navbar navbar-expand-lg navbar-dark container">
+            <div class="logo">
+                <img src="logosystemware.png" alt="Logo WarehouseBot" class="img-fluid" style="height: 50px;">
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link text-white" id="inicio">Inicio</a></li>
+                    <li class="nav-item"><a href="nosotros.html" class="nav-link text-white" id="nosotros">Sobre Nosotros</a></li>
+                    <li class="nav-item"><a href="motivadores.html" class="nav-link text-white" id="motivadores">Motivadores</a></li>
+                    <li class="nav-item"><a href="team.html" class="nav-link text-white" id="team">Nuestro equipo</a></li>
+                    <li class="nav-item"><a href="portafolio.html" class="nav-link text-white active-link" id="portafolio">Portafolio</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container mt-5">
+        <h1 class="text-center">Caso de Negocio</h1>
+        <h2 class="text-center">Implementación de WarehouseBot para Almacenes EPA</h2>
+        <h3 class="text-center">San Miguel, Febrero 2025</h3>
+
+        <div class="mt-5">
+            <h2>1. Identificación del Proyecto</h2>
+            <p><strong>Nombre del proyecto:</strong> WAREHOUSEBOT</p>
+            <p><strong>Empresa que desarrolla el proyecto:</strong> SMARTWARE SOLUTIONS</p>
+            <p><strong>Representante legal:</strong> Jonathan David Flores Dimas</p>
+            <p><strong>Dirección:</strong> San Miguel</p>
+            <p><strong>Teléfono:</strong> 7895-5421</p>
+            <p><strong>Email:</strong> jonathanfloresdimas@gmail.com</p>
+            <p><strong>Fecha de inicio:</strong> 20 Enero 2025</p>
+            <p><strong>Fecha de fin:</strong> 15 Junio 2025</p>
+            <p><strong>Cliente:</strong> Grupo Blohm – Almacenes EPA</p>
+            <p><strong>Patrocinador:</strong> Universidad Gerardo Barrios</p>
+            <p><strong>Tipo de Proyecto:</strong> CAPEX ☐ OPEX ☐</p>
+        </div>
+
+        <div class="mt-5">
+            <h2>1.1 Resumen Ejecutivo</h2>
+            <p>WarehouseBot es un innovador proyecto de simulación que busca revolucionar la gestión de inventario mediante el uso de robots autónomos en entornos virtuales. Nuestra misión es demostrar cómo la automatización y la inteligencia artificial pueden optimizar la logística en grandes almacenes y ferreterías, reduciendo costos operativos y aumentando la eficiencia. Para ello, hemos creado un entorno digital basado en la estructura de EPA, donde los robots realizarán tareas como transporte, clasificación y organización de productos.
+
+                El proyecto es desarrollado por un equipo multidisciplinario de estudiantes de Ingeniería en Sistemas y Redes Informáticas, liderado por Jonathan Flores. Contamos con experiencia en modelado 3D, desarrollo de software y simulación en motores gráficos como Blender o Unreal Engine 5. Nuestra propuesta se diferencia al integrar inteligencia artificial avanzada y algoritmos de navegación autónoma, asegurando una simulación realista y aplicable a escenarios industriales.
+                
+                Nuestra base de clientes potenciales incluye empresas de logística, distribución y comercio minorista, interesadas en optimizar su gestión de inventarios mediante la automatización. A través de nuestra simulación, mostramos cómo la implementación de robots autónomos puede mejorar la productividad y reducir el margen de error en la manipulación de mercancías.
+                
+                WarehouseBot tiene el potencial de diferenciarse en el mercado gracias a su enfoque realista y adaptable a distintas industrias. En términos de proyecciones, esperamos validar nuestro modelo en entornos simulados y, a futuro, explorar aplicaciones en entornos reales. Actualmente, el desarrollo del proyecto no requiere financiamiento externo, pero en fases posteriores podría considerar inversiones en infraestructura tecnológica y expansión del modelo a diferentes sectores industriales.
+                .</p>
+        </div>
+
+        <div class="mt-5">
+            <h2>2. Necesidades del Negocio</h2>
+            <h3>2.1 Justificación</h3>
+            <p>2.1	Justificación
+                Motivación:
+                En la actualidad, la gestión de inventarios en grandes almacenes y ferreterías enfrenta múltiples desafíos, como la ineficiencia en la organización, errores humanos en el manejo de productos y costos operativos elevados. La automatización a través de robots autónomos es una solución innovadora que muchas empresas aún no han implementado debido a la falta de pruebas y simulaciones realistas. WarehouseBot busca cerrar esta brecha, proporcionando un entorno virtual donde se pueda evaluar el impacto de la robótica en la optimización de inventarios.
+                
+                Problema que solucionará el proyecto:
+                El proyecto abordará la necesidad de mejorar la eficiencia y precisión en la gestión de inventarios en almacenes. Al simular un entorno realista basado en la ferretería EPA, WarehouseBot permitirá visualizar cómo los robots autónomos pueden realizar tareas como clasificación, transporte y organización de productos de manera más rápida y sin errores, reduciendo costos y optimizando los tiempos de trabajo.
+                
+                Valor:
+                La implementación de WarehouseBot beneficiará a empresas de logística y comercio al proporcionar un modelo de simulación confiable para probar soluciones automatizadas sin necesidad de inversión inmediata en hardware real. Además, permitirá a los sectores industriales visualizar los beneficios de la automatización y la inteligencia artificial en la gestión de inventarios, promoviendo un futuro más eficiente y tecnológicamente avanzado.
+                
+                Métricas e indicadores de éxito:
+                Para medir el impacto y la efectividad del proyecto, se utilizarán los siguientes indicadores:
+                <ul>
+                    <li>Nivel de optimización del flujo de inventario en la simulación</li>
+                    <li>Precisión de los robots autónomos en la ejecución de tareas sin errores.</li>
+                    <li>	Tiempo promedio de transporte y organización de productos dentro del almacén virtual</li>
+                    <li>	Nivel de interacción con empresas y potenciales interesados, como ferreterías y empresas de logística.</li>
+                    <li>	Calidad gráfica y realismo de la simulación, evaluada mediante pruebas de usuarios y presentaciones del modelo en motores gráficos como Blender o Unreal Engine 5.
+
+                    </li>
+                </ul>
+                
+            </p>
+        </div>
+
+        <div class="mt-5">
+            <h2>2.2 Interesados Afectados</h2>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Departamento</th>
+                        <th>Cargo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Jonathan David Flores Dimas</td>
+                        <td>Involucrado</td>
+                        <td>Líder, desarrollador</td>
+                    </tr>
+                    <tr>
+                        <td>Jimmy Abelardo Rivas Lazo</td>
+                        <td>Involucrado</td>
+                        <td>Desarrollador</td>
+                    </tr>
+                    <tr>
+                        <td>Julio Cesar Sánchez Campos</td>
+                        <td>Involucrado</td>
+                        <td>Desarrollador</td>
+                    </tr>
+                    <tr>
+                        <td>Fredy Alexander Funes Ortiz</td>
+                        <td>Involucrado</td>
+                        <td>Jefe de ventas</td>
+                    </tr>
+                    <tr>
+                        <td>Roberto Monge</td>
+                        <td>Cliente</td>
+                        <td>Gerente de área - Grupo Blohm</td>
+                    </tr>
+                    <tr>
+                        <td>Jose Yaquinto</td>
+                        <td>Cliente</td>
+                        <td>Gerente de ventas – Grupo Blohm</td>
+                    </tr>
+                    <tr>
+                        <td>Victor Martinez</td>
+                        <td>Cliente</td>
+                        <td>Gerente de finanzas y CFO – Grupo Blohm</td>
+                    </tr>
+                    <tr>
+                        <td>Universidad Gerardo Barrios</td>
+                        <td>Patrocinador</td>
+                        <td>Patrocinador</td>
+                    </tr>
+                    <tr>
+                        <td>Aroldo Portillo</td>
+                        <td>Proveedor</td>
+                        <td>Gerente general EPA El Salvador</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="mt-5">
+            <h2>2.3 Alcance del Proyecto</h2>
+            <p>EEl proyecto WarehouseBot tiene como objetivo principal desarrollar una simulación virtual de un almacén automatizado basado en la ferretería EPA, donde robots autónomos gestionarán el inventario de manera eficiente. Este entorno digital permitirá evaluar el impacto de la robótica en la optimización de procesos logísticos y servirá como un modelo de referencia para futuras implementaciones en el mundo real.
+                Hasta dónde queremos llegar con el proyecto
+                </p>
+                <ul>
+                    <li>	delar un almacén completo en un entorno virtual detallado, incluyendo estanterías, productos y zonas de carga y descarga.</li>
+                    <li>	arrollar e integrar robots autónomos con capacidad de moverse, recoger, transportar y colocar objetos dentro del almacén.</li>
+                    <li>	plementar navegación inteligente mediante algoritmos de IA que permitan a los robots desplazarse sin colisiones y optimizar rutas de transporte.</li>
+                    <li>	mular escenarios realistas donde se evalúe la eficiencia de los robots en distintas condiciones, como alta demanda o cambios  la disposición del inventario.</li>
+                    <li>	Optimizar la experiencia visual e interactiva, asegurando que la simulación en motores gráficos como Blender o Unreal Engine sea fluida y representativa de un entorno real</li>
+                    <li>	Desarrollar una aplicación complementaria que permita monitorear la actividad de los robots dentro de la simulación, vializar datos en tiempo real y realizar ajustes en la gestión del almacén de forma remota.</li>
+                    <l el proyecto como un modelo innovador que pueda ser considerado por empresas o instituciones interesadas en la automatización de inventarios</li>
+                </ul>
+        </div>
+
+        <div class="mt-5">
+            <h2>3. Análisis de la Situación</h2>
+            <p>El proyecto WarehouseBot surge como una solución innovadora dentro del sector logístico y de gestión de inventarios, específicamente en el contexto de ferreterías y almacenes de gran escala, tomando como referencia el modelo de negocio de EPA. El objetivo principal es mejorar la eficiencia en la administración de productos mediante la implementación de robots autónomos, reduciendo errores humanos y optimizando tiempos de operación.</p>
+            <h3>Contexto y Usuarios Objetivo</h3>
+            <p>La solución está dirigida a empresas del sector retail, almacenes y centros de distribución que manejan grandes volúmenes de inventario y buscan automatizar procesos para aumentar su productividad. EPA, como modelo de referencia, es una ferretería que maneja una amplia gama de productos y requiere un sistema eficiente para la organización y transporte de mercancía dentro de sus instalaciones.
+                En este contexto, WarehouseBot proporcionará una simulación realista de un almacén automatizado, mostrando cómo la robótica puede mejorar la eficiencia en la gestión de inventarios. Además, la aplicación complementaria permitirá a los usuarios visualizar la actividad de los robots y evaluar métricas de desempeño
+                </p>
+                <h3>Opciones y Tecnologías para su Creación</h3>
+                <p>Para el desarrollo del proyecto se consideran las siguientes herramientas y programas:</p>
+                <ol>
+                    <li>Modelado y Simulación del Entorno<ul>
+                        <li>Blender o Unreal Engine 5 para la creación del entorno 3D del almacén.</li>
+                        <li>	Unity o Gazebo como posibles motores de simulación para las interacciones de los robots con el entorno.</li>
+                    </ul>
+                    </li>
+                    <li>Desarrollo de los Robots Autónomos
+                        <ul><li>Python y C++ para la programación de IA y navegación autónoma.</li>
+                        <li>ROS (Robot Operating System) para la simulación avanzada de la robótica.</li>
+                        <li>Algoritmos de machine learning y detección de objetos para mejorar la toma de decisiones de los robots.</li>
+                    </ul>
+                    </li>
+                    <li>Desarrollo de la Aplicación Complementaria
+
+                        <ul>
+                            <li>React Native para la creación de una aplicación multiplataforma que permita monitorear los robots.</li>
+                            <li>Firebase o Node.js con Express para gestionar la comunicación en tiempo real entre la simulación y la aplicación.</li>
+                        </ul>
+                    </li>
+                </ol>
+        </div>
+        <div class="mt-5">
+            <h2>3.1	ESTRATEGIAS, METAS Y OBJETIVOS DE LA EMPRESA</h2>
+            <p>Misión </p>
+            <ul>
+                <li>Ofrecer soluciones integrales e innovadoras para la construcción, decoración y remodelación</li>
+                <li>Maximizar la productividad de los clientes</li>
+                <li>Exceder las expectativas de los clientes</li>
+            </ul>
+            <p>Visión </p>
+            <ul>
+                <li>Ser una empresa admirada y líder en soluciones integrales e innovadoras</li>
+                <li>Ser el mejor lugar para trabajar</li>
+                <li>Tener una amplia solvencia económica</li>
+            </ul>
+            <p>Valores</p>
+            <ul>
+                <li>Dinamismo</li>
+                <li>Creatividad tecnológica</li>
+                <li>Trabajo en equipo</li>
+                <li>Responsabilidad social</li>
+                <li>Pasión y búsqueda de desafíos</li>
+                <li>Confianza y respeto</li>
+            </ul>
+            <p>Compromiso social</p>
+            <ul>
+                <li>	Apoyar a las comunidades, instituciones y fundaciones cercanas a las tiendas </li>
+                <li>	Realizar acciones con sentido social con la finalidad de crear bienestar progreso y protección al medio ambiente 
+
+                </li>
+            </ul>
+        </div>
+        <div class="mt-5">
+            <h2>3.1.1	ESTRATEGIAS</h2>
+            <p>Para la correcta ejecución del proyecto WarehouseBot, se implementarán las siguientes estrategias que facilitarán la toma de decisiones y garantizarán el éxito del desarrollo:</p>
+            <ul>
+            <li>Modelar un entorno virtual realista basado en la infraestructura de EPA, utilizando herramientas como Blender o Unreal Engine 5 para la creación de espacios y simulación de operaciones logísticas.</li>
+            <li>Desarrollar un sistema de navegación autónoma para los robots mediante algoritmos de inteligencia artificial y machine learning, permitiendo optimizar rutas y mejorar la eficiencia en la gestión del almacén.</li>
+            <li>Implementar ROS (Robot Operating System) para la simulación avanzada del comportamiento de los robots, asegurando un funcionamiento preciso y adaptable.</li>
+            <li>Crear una aplicación complementaria en React Native que permita el monitoreo en tiempo real de las operaciones dentro de la simulación, facilitando el análisis de métricas clave.</li>
+            <li>Diseñar protocolos de comunicación eficientes entre los robots y el sistema central para coordinar tareas sin interferencias ni retrasos.</li>
+            <li>Realizar pruebas y validaciones constantes en entornos de simulación para optimizar la precisión y efectividad del sistema antes de su presentación final.</li>
+            <li>Definir métricas clave de desempeño para evaluar el éxito del proyecto, tales como tiempo de respuesta de los robots, precisión en la gestión del inventario y optimización de rutas.</li>
+            <li>Documentar cada fase del desarrollo para facilitar futuras mejoras y garantizar la escalabilidad del sistema en entornos reales</li>
+        </ul>
+        <p>Estas estrategias permitirán una toma de decisiones eficiente, asegurando que WarehouseBot cumpla con los objetivos de optimización y automatización en la gestión de almacenes.</p>
+        </div>
+
+        <div class="mt-5">
+            <h2>3.1.2	METAS</h2>
+            <p>El proyecto WarehouseBot tiene como objetivo principal la simulación de un sistema de gestión de inventarios automatizado en un entorno virtual, replicando el funcionamiento de un almacén inteligente en una empresa como EPA. Para lograrlo, se establecen las siguientes metas:</p>
+            <ol>
+                <li>	Desarrollar un entorno virtual realista que represente un almacén de EPA, utilizando motores gráficos como Unreal Engine 5 o Blender para su modelado y renderización.</li>
+                <li>Implementar robots autónomos con capacidad de navegación inteligente para el transporte y organización de productos dentro del almacén.</li>
+                <li>	Optimizar los tiempos de operación, reduciendo los desplazamientos innecesarios y mejorando la eficiencia en la gestión del inventario.</li>
+                <li>	Crear una aplicación en React Native que permita el monitoreo del rendimiento de los robots y la simulación en tiempo real.</li>
+                <li>	Garantizar la comunicación efectiva entre los robots y el sistema central mediante protocolos optimizados para la transmisión de datos en tiempo real.</li>
+                <li>	Realizar pruebas de funcionalidad y eficiencia, analizando métricas clave como precisión en el manejo del inventario, tiempos de entrega y optimización de rutas.</li>
+                <li>	Documentar el desarrollo del proyecto con el fin de generar un marco de referencia para futuras implementaciones y mejoras.</li>
+                <li>Presentar un prototipo funcional en el que se evidencie el impacto positivo de la automatización en la gestión de almacenes.</li>
+                <li>  Asegurar la escalabilidad del proyecto, permitiendo que el modelo pueda adaptarse a diferentes tamaños y tipos de almacenes en el futuro.</li>
+            </ol>
+            <p>Con estas metas, WarehouseBot se posicionará como una solución innovadora en la automatización de almacenes, demostrando cómo la inteligencia artificial y la robótica pueden optimizar los procesos logísticos en empresas del sector retail y distribución.</p>
+        </div>
+
+        <div class="mt-5">
+            <h2>3.1.3	OBJETIVOS</h2>
+            <p>Objetivo General:
+                Desarrollar una simulación digital de un robot autónomo para el control de inventario en un almacén de ferretería, con el fin de optimizar la gestión de recursos y el transporte de mercancías dentro de un entorno virtual, demostrando su capacidad para realizar tareas de manera eficiente y autónoma.
+                </p>
+                <p>Objetivos Específicos:</p>
+                <ol>
+                    <li>	Diseñar y modelar el entorno virtual del almacén de ferretería (EPA) utilizando un motor gráfico como Blender o Unreal Engine 5.</li>
+                    <li>	Programar el comportamiento autónomo del robot para que pueda realizar tareas como el transporte de cargamentos y la reubicación de productos en el almacén.</li>
+                    <li>	Implementar un sistema de gestión de inventario virtual que permita simular el movimiento de mercancías y el control de stock.</li>
+                    <li>	Optimizar la navegación del robot dentro del entorno virtual, asegurando que evite obstáculos y elija rutas eficientes para realizar sus tareas.</li>
+                    <li>	Realizar pruebas y ajustes en la simulación para garantizar la precisión del control de inventario y la efectividad de las tareas realizadas por el robot.</li>
+                    <li>	Presentar la simulación final en un formato visual atractivo, mostrando el funcionamiento del robot en el ambiente de ferretería EPA.</li>
+                </ol>
+
+        </div>
+
+        <div class="mt-5">
+            <h2>3.2	PROBLEMA/CAUSA RAÍZ U OPORTUNIDAD</h2>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Problema</th>
+                       
+                        <th>Oportunidad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Problema La página web de la ferretería muestra productos agotados, lo que genera una mala experiencia para los clientes y puede reducir las ventas</td>
+                        <td><ul>
+                        
+                            <li>Sugerir productos similares  Mostrar alternativas disponibles para evitar la pérdida de la venta.</li>
+                            <li>Mejorar la gestión de inventarios  Optimizar la actualización del stock en tiempo real para evitar mostrar productos agotados.</li>
+                            <li>Optimizar la cadena de suministro  Trabajar con proveedores para reducir tiempos de reposición</li>
+                        </ul></td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+        
+        <div class="mt-5">
+            <h2>3.3	BRECHAS: CAPACIDADES REQUERIDAS VS. ACTUALES</h2>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Capacidades requeridas</th>
+                        <th>Capacidades actuales</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Experiencia en modelado 3D y creación de entornos virtuales realistas utilizando Blender o Unreal Engine 5.como Blender o Unreal Engine 5.</td>
+                        <td>Ninguno de los miembros tiene experiencia avanzada en diseño 3D. Sin embargo, el equipo puede aprender esta habilidad, especialmente si alguno de los miembros muestra interés, o pueden recurrir a un especialista externo para esta área.</td>
+                    </tr>
+                    <tr>
+                        <td>Conocimientos en algoritmos de navegación, como A* y SLAM, para permitir que el robot navegue de manera eficiente por el entorno.</td>
+                        <td>Jonathan, Julio Cesar y Jimmy tienen habilidades de desarrollo, lo que les permitirá encargarse de esta parte del proyecto. Aunque necesitarán capacitación adicional en estos algoritmos específicos, tienen una base sólida en programación.</td>
+                    </tr>
+                    <tr>
+                        <td>Conocimientos en inteligencia artificial (IA) para programar el comportamiento autónomo del robot.</td>
+                        <td>Es probable que el equipo no tenga experiencia directa en IA, por lo que se podría asignar a Julio Cesar o Jimmy la tarea de investigar y aprender sobre este tema, dado su perfil como desarrolladores.</td>
+                    </tr>
+                    <tr>
+                        <td>Conocimientos en bases de datos, gestión de inventarios y capacidad de integrar estos sistemas con el robot..</td>
+                        <td>Julio Cesar y Jimmy tienen un fuerte enfoque en bases de datos, lo que les permitirá encargarse de la gestión de inventarios y la integración con la base de datos del sistema. Este será un punto fuerte del equipo.</td>
+                    </tr>
+                    <tr>
+                        <td>Habilidades para crear una simulación interactiva con una interfaz de usuario atractiva y funcional, y la integración del robot en el entorno virtual.</td>
+                        <td>Jonathan y Fredy tienen conocimientos en desarrollo, por lo que podrían colaborar en la creación de la simulación interactiva. Fredy aportaría su experiencia en diseño de interfaz de usuario y experiencia de usuario (UX/UI), mientras que Jonathan apoyaría en la parte de programación.</td>
+                    </tr>
+                    <tr><td>Conocimientos en optimización de recursos para simulaciones gráficas y el rendimiento del robot dentro del entorno virtual.</td>
+                        <td>Esta será una habilidad que el equipo deberá aprender. Sin embargo, Julio Cesar y Jimmy, con su experiencia en programación, pueden investigar y aplicar técnicas de optimización para mejorar el rendimiento de la simulación.</td>
+                    </tr>
+                    <tr>
+                        <td>Habilidad para realizar pruebas exhaustivas en la simulación y en el comportamiento del robot, depurando cualquier fallo en el sistema.</td>
+                        <td>Jonathan, Julio Cesar y Jimmy tienen experiencia en pruebas y depuración de sistemas. Pueden colaborar en esta tarea, con un enfoque en asegurar que el robot funcione correctamente en el entorno simulado.</td>
+                    </tr>
+                    <tr>
+                        <td>Habilidades para gestionar el proyecto, coordinar las tareas, asignar responsabilidades y garantizar el cumplimiento de plazos.</td>
+                        <td>Jonathan tiene experiencia en gestión de proyectos, y Julio Cesar también tiene un enfoque en project management. Esto les permitirá asegurar que el proyecto avance de manera fluida y dentro de los plazos establecidos.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="mt-5">
+            <h2>3.4	RIESGOS CONOCIDOS</h2>
+            <ol>
+                <li>Resistencia al uso de la simulación por temor al cambio
+                <ul>
+                <li>	Descripción: Los usuarios, ya sean empleados o administradores del inventario, podrían mostrar resistencia al uso de la nueva simulación debido a la falta de familiaridad con la tecnología o el cambio en los procesos existentes.</li>
+                <li>Posible solución: Implementar capacitación y soporte continuo, destacando los beneficios del sistema, y ofrecer sesiones de introducción para facilitar la adaptación.</li>
+                </ul>
+                </li>
+                <li> Dificultades en la integración de la inteligencia artificial
+                    <ul>
+                        <li>	Descripción: La programación de la inteligencia artificial para la navegación autónoma del robot podría ser más compleja de lo esperado, lo que podría generar retrasos en el desarrollo.</li>
+                        <li>Posible solución: Iniciar con un enfoque modular, implementando IA simple inicialmente y luego mejorándola progresivamente. Capacitar al equipo en IA o contratar asesoría externa si es necesario.</li>
+                </ul>
+                </li>
+                <li>Falta de experiencia en modelado 3D y simulación gráfica
+                    <ul><li>	Descripción: Ningún miembro del equipo tiene experiencia avanzada en modelado 3D y simulaciones gráficas, lo que podría causar retrasos en la creación de entornos virtuales realistas y en la integración del robot en la simulación.</li>
+                    <li>Posible solución: Asignar a un miembro del equipo con interés o aptitud en este campo y realizar investigaciones o cursos sobre herramientas como Blender o Unreal Engine 5. Considerar contratar a un especialista externo si es necesario.</li>
+                </ul>
+                </li>
+                <li> Problemas con la optimización del rendimiento en simulación
+                    <ul><li>	Descripción: La simulación podría volverse lenta o inestable debido a la falta de optimización, lo que afectaría la experiencia del usuario y la efectividad del sistema</li>
+                    <li>	Posible solución: Dedicar tiempo y recursos para investigar y aplicar mejores prácticas en optimización de simulaciones y rendimiento gráfico. Probar versiones optimizadas a lo largo del desarrollo.</li>
+                </ul>
+                </li>
+                <li>Falta de datos reales o representativos para las pruebas
+                    <ul><li>Descripción: Puede haber una falta de datos reales sobre el inventario o el entorno de la ferretería, lo que dificultaría la realización de pruebas efectivas y representativas del sistema</li>
+                    <li>Posible solución: Crear datos de prueba realistas o simular el entorno de la ferretería lo más fielmente posible, usando datos ficticios que se asemejen a los datos reales.</li></ul>
+                </li>
+                <li>. Problemas de compatibilidad entre el sistema y la infraestructura existente
+                    <ul><li>	Descripción: El sistema de gestión de inventarios y la simulación podrían no ser completamente compatibles con la infraestructura actual de hardware o software de la empresa. </li>
+                    <li>Posible solución: Realizar una evaluación de la infraestructura actual antes del desarrollo y asegurarse de que el sistema se pueda integrar sin problemas. Considerar posibles actualizaciones de hardware o software si es necesario.</li></ul>
+                </li>
+                <li>Retrasos en el desarrollo por falta de coordinación o distribución de tareas
+                    <ul><li>	Descripción: La falta de claridad en la asignación de tareas o la gestión inadecuada del proyecto podría generar retrasos en el avance del desarrollo y la implementación.</li>
+                    <li>Posible solución: Definir claramente los roles de cada miembro del equipo, establecer metas alcanzables a corto plazo y usar herramientas de gestión de proyectos (como Trello, Asana, etc.) para hacer seguimiento al progreso.</li></ul>
+                </li>
+                <li>. Limitaciones de tiempo y recursos para cumplir con el calendario
+                    <ul><li>Descripción: El equipo podría no contar con suficiente tiempo o recursos para completar el proyecto dentro de los plazos establecidos.</li>
+                    <li>Posible solución: Realizar una planificación detallada con márgenes de tiempo, ajustando las expectativas del cliente o usuarios, y priorizando las funcionalidades críticas del sistema. Buscar recursos adicionales si es necesario.</li></ul>
+                </li>
+                <li>. Falta de aceptación del robot autónomo por parte de los empleados</li>
+                <ul>
+                    <li><strong>Descripción:</strong> Los empleados podrían no confiar en el robot para realizar tareas autónomas debido a dudas sobre su efectividad y fiabilidad.</li>
+                    <li><strong>Posible solución</strong>: Realizar pruebas de campo con el robot, proporcionando retroalimentación continua para mejorar la confiabilidad. También se podrían realizar talleres o seminarios para familiarizar a los empleados con el funcionamiento del robot.</li>
+                </ul>
+                <li>Problemas con la seguridad de los datos
+                    <ul><li>	Descripción: El sistema de gestión de inventarios podría estar expuesto a vulnerabilidades de seguridad, lo que pondría en riesgo los datos de los empleados o la empresa.</li>
+                    <li>	Posible solución: Implementar medidas de seguridad robustas en la base de datos y los sistemas relacionados, como cifrado de datos y autenticación de usuarios, para proteger la información sensible.</li></ul>
+                </li>
+            </ol>
+        </div>
+        <div class="mt-5">
+            <h2>3.5	FACTORES CRÍTICOS DE ÉXITO (FCE)</h2>
+            <ol>
+                <li><strong> Gestión y desarrollo eficaz de cada fase del proyecto</strong>
+                <ul>
+                    <li><strong>Descripción</strong>: Asegurar que cada fase del proyecto (planificación, desarrollo, pruebas, implementación) se gestione de manera eficiente, cumpliendo con los plazos y requisitos establecidos.</li>
+                    <li><strong>Acción critica</strong>: Crear un plan detallado de proyecto con fechas límite claras y responsables asignados para cada fase</li>
+                </ul>
+                </li>
+
+
+                <li><strong>Reuniones periódicas para validar avances con el cliente o stakeholders</strong>
+                <ul>
+                    <li><strong>Descripción</strong>Realizar reuniones frecuentes (mensuales, semanales o quincenales) con el cliente o los stakeholders para revisar y validar los entregables del proyecto, tales como documentos, prototipos o avances de simulación.</li>
+                    <li><strong>Acción critica</strong>Establecer un calendario de reuniones y asegurar que los entregables sean revisados y aprobados de manera continua para evitar desviaciones en los requisitos.</li>
+                </ul>
+                </li>
+
+                <li><strong>Desarrollo iterativo y mejora continua</strong>
+                <ul>
+                    <li><strong>Descripción</strong>Utilizar un enfoque de desarrollo iterativo que permita entregar versiones funcionales del sistema en ciclos cortos, incorporando retroalimentación para mejorar el producto de forma continua.</li>
+                    <li><strong>Acción critica</strong>Implementar prácticas ágiles como Scrum o Kanban, revisando frecuentemente el avance y ajustando las prioridades según el feedback recibido.</li>
+                </ul>
+                </li>
+
+                <li><strong>Planificación adecuada de recursos humanos y materiales</strong>
+                <ul>
+                    <li><strong>Descripción</strong>Asegurar que el equipo tenga los recursos humanos y materiales necesarios para cada fase del proyecto, sin faltantes ni exceso de recursos.</li>
+                    <li><strong>Acción critica</strong>Planificar y asignar recursos de manera efectiva, ajustando la carga de trabajo de los miembros del equipo según las necesidades y competencias.</li>
+                </ul>
+                </li>
+
+                <li><strong>Capacitación constante del equipo</strong>
+                <ul>
+                    <li><strong>Descripción</strong>Proveer capacitación continua sobre nuevas tecnologías, herramientas de desarrollo y mejores prácticas a todos los miembros del equipo para garantizar que estén preparados para afrontar los retos del proyecto.</li>
+                    <li><strong>Acción critica</strong>
+                        Ofrecer cursos, tutoriales y sesiones de aprendizaje continuo sobre IA, modelado 3D, optimización y otras áreas clave.</li>
+                </ul>
+                </li>
+
+                <li><strong>Calidad del código y pruebas exhaustivas</strong>
+                <ul>
+                    <li><strong>Descripción</strong>Asegurar que el código del proyecto se mantenga limpio, modular y bien documentado. Realizar pruebas exhaustivas para garantizar que el sistema funcione correctamente en todas las condiciones posibles.</li>
+                    <li><strong>Acción critica</strong>Implementar procesos de control de calidad, incluyendo pruebas unitarias, de integración y de aceptación para detectar errores de manera temprana.</li>
+                </ul>
+                </li>
+
+                <li><strong>Documentación clara y completa</strong>
+                <ul>
+                    <li><strong>Descripción</strong>: Crear documentación detallada que cubra todas las fases del proyecto: desde la planificación inicial hasta el código fuente, pasando por los algoritmos implementados y los resultados de las pruebas.</li>
+                    <li><strong>Acción critica</strong> Mantener una documentación actualizada y accesible para todo el equipo y stakeholders, utilizando herramientas de gestión de documentación como GitHub o Confluence.</li>
+                </ul></li>
+
+                <li><strong>Gestión adecuada de los riesgos</strong>
+                <ul>
+                    <li><strong>Descripción</strong>Identificar, analizar y mitigar los riesgos potenciales de manera proactiva durante el desarrollo del proyecto para evitar que afecten el cronograma o el presupuesto.</li>
+                    <li><strong>Acción critica</strong>Implementar un plan de gestión de riesgos, con estrategias de mitigación para cada riesgo identificado, y realizar revisiones periódicas del estado de los riesgos.</li>
+                </ul></li>
+
+            
+                <li><strong>Comunicación efectiva dentro del equipo</strong>
+                <ul>
+                    <li><strong>Descripción</strong> Asegurar que la comunicación dentro del equipo sea clara, constante y fluida, evitando malentendidos y asegurando que todos los miembros estén al tanto del progreso y cambios en el proyecto.</li>
+                    <li><strong>Acción critica</strong>Utilizar herramientas de comunicación como Slack o Microsoft Teams, y realizar reuniones regulares para mantener a todos los miembros alineados.</li>
+                </ul></li>
+
+                <li><strong>Cumplimiento de los requisitos del cliente y usuarios finales</strong>
+                <ul>
+                    <li><strong>Descripción</strong></li>
+                    <li><strong>Acción critica</strong></li>
+                </ul></li>
+
+                <li><strong>Implementación de medidas de seguridad y protección de datos</strong>
+                <ul>
+                    <li><strong>Descripción</strong>Asegurar que el producto final cumpla con las expectativas y requisitos de los clientes o usuarios finales, garantizando que se resuelvan sus necesidades de manera efectiva.</li>
+                    <li><strong>Acción critica</strong>Realizar encuestas, entrevistas y pruebas de usuario a lo largo del desarrollo para asegurarse de que se están cumpliendo los objetivos de los usuarios.</li>
+                </ul></li>
+
+                <li><strong>Entrega a tiempo dentro del presupuesto</strong>
+                <ul>
+                    <li><strong>Descripción</strong>Garantizar que el proyecto se complete dentro de los plazos y el presupuesto establecido, sin comprometer la calidad o el alcance.</li>
+                    <li><strong>Acción critica</strong>Monitorear constantemente el avance del proyecto, ajustando las prioridades y recursos si es necesario para asegurar la entrega dentro del tiempo y presupuesto acordado.</li>
+                </ul>
+                </li>
+
+                <li><strong>Escalabilidad y mantenimiento del sistema</strong>
+                <ul>
+                    <li><strong>Descripción</strong>Diseñar el sistema para que sea escalable y fácil de mantener a largo plazo, permitiendo actualizaciones y mejoras sin problemas.</li>
+                    <li><strong>Acción critica</strong>Utilizar arquitecturas modulares, realizar pruebas de escalabilidad y asegurarse de que el código sea fácil de modificar y expandir en el futuro.</li>
+                </ul></li>
+                <li><strong>Asegurar la colaboración con otros departamentos</strong>
+                <ul>
+                    <li><strong>Descripción</strong>Utilizar arquitecturas modulares, realizar pruebas de escalabilidad y asegurarse de que el código sea fácil de modificar y expandir en el futuro.</li>
+                    <li><strong>Acción critica</strong>Facilitar la comunicación entre departamentos, involucrando a las partes interesadas desde las fases iniciales del proyecto y asegurando que sus necesidades sean consideradas.</li>
+                </ul>
+                </li>
+            </ol>
+        </div>
+
+        <div class="mt-5">
+            <h2>Criterios de decisión</h2>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Requerido</th>
+                        <th>Deseable</th>
+                        <th>Opcional</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><th>Desarrollo de la simulacion</th></tr>
+                    <tr><th>Inteligencia Artificial (IA)</th></tr>
+                    <tr><th>Base de datos</th></tr>
+                    <tr>
+                        <th>Pruebas de funcionamiento</th>
+                       
+                    </tr>
+                    <tr>
+                        <th>Documentación </th>
+                    </tr>
+                    <tr>
+                        <th>Seguridad del sistema</th>
+                    </tr>
+                    <tr>
+                        <th>Capacitacion delos usuarios</th>
+                    </tr>
+                    <tr>
+                        <th>Mantenimiento del sistema</th>
+                    </tr>
+                    <tr>
+                        <th>Optimización del rendimiento</th>
+                    </tr>
+                    <tr><th>Escalabilidad</th></tr>
+                </tbody>
+            </table>
+
+        </div>
+
+        <div class="mt-5">
+
+            <h2>Impacto del proyecto</h2>
+            <table class="table table-bordered">
+                <tbody>
+                    <tr><th>Tecnologia</th>
+                    <th>Se implementará un sistema automatizado basado en robótica e inteligencia artificial para la gestión de inventarios, mejorando la eficiencia operativa. La empresa adoptará nuevas tecnologías como simulaciones en entornos virtuales y bases de datos inteligentes.</th>
+                    </tr>
+                    <tr><th>Procesos</th>
+                    <th>Se optimizarán los procesos de inventario mediante la automatización, reduciendo errores humanos, mejorando la rapidez en la distribución y aumentando la precisión en el control de productos.</th>
+                    </tr>
+                    <tr><th>estructura</th>
+                    <th>Puede requerirse una reorganización en la distribución de tareas, ya que los empleados actuales deberán adaptarse a la supervisión de los robots en lugar de realizar las tareas manualmente.</th></tr>
+                    <tr><th>Cultura</th>
+                    <th>La empresa deberá adaptarse a una cultura de innovación tecnológica, fomentando la confianza en la automatización y promoviendo el uso de herramientas digitales para la gestión operativa.</th></tr>
+                    <tr><th>Hablididades del personal</th>
+                    <th>Los empleados deberán recibir capacitación para operar y supervisar el sistema automatizado, comprendiendo su funcionamiento y resolución de posibles problemas técnicos.</th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="mt-5">
+            <h2>Conjunto de opciones </h2>
+            <table class="table table-bordered">
+
+                <thead>
+                    <tr><th>acciones posibles</th>
+                    <th>Observaciones</th></tr>
+                </thead>
+                <tbody>
+                    <tr><th>Plataforma web</th>
+                        <th>Los empleados deberán recibir capacitación para operar y supervisar el sistema automatizado, comprendiendo su funcionamiento y resolución de posibles problemas técnicos. <br>
+                            Los empleados deberán recibir capacitación para operar y supervisar el sistema automatizado, comprendiendo su funcionamiento y resolución de posibles problemas técnicos. <br>
+                            Se implementará un carrito de compras con opciones de pago seguro y envío a domicilio.
+                            </th>
+                            <tr><th>Aplicación movil</th>
+                            <th>Se diseñará una app móvil para iOS y Android que ofrezca una experiencia de usuario optimizada para dispositivos móviles. <br>
+                                Se incluiran funcionalidades como notificaciones push para promociones, recordatorios de carritos abandonados y seguimiento de pedidos. <br>
+                                Se integrará un sistema de geolocalización para mostrar la tienda EPA más cercana al usuario.
+                                Se priorizará la usabilidad y la velocidad de carga para mejorar la satisfacción del cliente.
+                                </th></tr>
+                                <tr><th>Implementación de un robot autonomo </th>
+                                <th>El robot estará equipado con sensores y sistemas de navegación para moverse de manera autónoma y evitar obstáculos.
+                                    Realizará tareas como escaneo de códigos de barras, conteo de stock y actualización de la base de datos en tiempo real.
+                                    </th>
+                                </tr>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="mt-5">
+            <h2>4. Recomendación</h2>
+            <p>Se han identificado 7 acciones clave para abordar el problema, cada una vinculada a áreas tecnológicas específicas. A continuación, se analizan sus beneficios y desafíos:</p>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Opción</th>
+                        <th>Beneficios</th>
+                        <th>Desafíos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Hardware + Robótica</td>
+                        <td>Permite la automatización eficiente del inventario con robots.</td>
+                        <td>Costo de adquisición e integración. Compatibilidad con otros sistemas.</td>
+                    </tr>
+                    <tr>
+                        <td>Bases de Datos</td>
+                        <td>Mejora la organización y trazabilidad del inventario. Facilita la toma de decisiones.</td>
+                        <td>Diseño eficiente y mantenimiento continuo. Seguridad de la información.</td>
+                    </tr>
+                    <tr>
+                        <td>Programación + Inteligencia Artificial</td>
+                        <td>Control preciso del robot y automatización de tareas.</td>
+                        <td>Desarrollo complejo y necesidad de pruebas rigurosas.</td>
+                    </tr>
+                    <tr>
+                        <td>Redes + Comunicaciones</td>
+                        <td>Permite la comunicación estable entre robots y servidores.</td>
+                        <td>Inversión en hardware y configuración óptima para evitar latencias.</td>
+                    </tr>
+                    <tr>
+                        <td>Domótica + Robótica</td>
+                        <td>Ahorro de energía y mayor eficiencia operativa en almacenes.</td>
+                        <td>Integración con el sistema actual y compatibilidad con robots.</td>
+                    </tr>
+                    <tr>
+                        <td>Inteligencia Artificial + Bases de Datos</td>
+                        <td>Reduce tiempos de entrega y mejora la eficiencia operativa.</td>
+                        <td>Necesidad de entrenamiento y algoritmos avanzados.</td>
+                    </tr>
+                    <tr>
+                        <td>Redes + Seguridad en Bases de Datos</td>
+                        <td>Previene ataques cibernéticos y protege la información del inventario.</td>
+                        <td>Implementación de protocolos de seguridad y actualizaciones constantes.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="mt-5">
+            <h2>5. Evaluación</h2>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Objetivo</th>
+                        <th>Meta</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Automatización del proceso de inventario</td>
+                        <td>Reducir el tiempo de procesamiento de inventarios en un 30% en los primeros 6 meses.</td>
+                    </tr>
+                    <tr>
+                        <td>Mejorar la eficiencia operativa</td>
+                        <td>Optimizar las rutas de los robots para reducir el tiempo de operación en un 20%.</td>
+                    </tr>
+                    <tr>
+                        <td>Reducir los costos operativos</td>
+                        <td>Disminuir los costos asociados al inventario y la mano de obra en un 15%.</td>
+                    </tr>
+                    <tr>
+                        <td>Aumentar la satisfacción del cliente</td>
+                        <td>Incrementar la satisfacción del cliente en un 10% por la mejora en la precisión y tiempos de entrega.</td>
+                    </tr>
+                    <tr>
+                        <td>Escalabilidad del sistema</td>
+                        <td>Expansión del sistema a dos almacenes adicionales sin aumentar los costos operativos en más de un 10%.</td>
+                    </tr>
+                    <tr>
+                        <td>Mejorar la capacitación del personal</td>
+                        <td>Capacitar al 100% del personal involucrado en el uso del sistema en los primeros 3 meses.</td>
+                    </tr>
+                    <tr>
+                        <td>Mantener la seguridad del sistema</td>
+                        <td>Reducir a cero los incidentes de seguridad o caídas del sistema en el primer año de operación.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 WarehouseBot. Todos los derechos reservados.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
