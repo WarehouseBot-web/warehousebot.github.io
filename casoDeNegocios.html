@@ -51,7 +51,7 @@
             <p><strong>Fecha de fin:</strong> 15 Junio 2025</p>
             <p><strong>Cliente:</strong> Grupo Blohm – Almacenes EPA</p>
             <p><strong>Patrocinador:</strong> Universidad Gerardo Barrios</p>
-            <p><strong>Tipo de Proyecto:</strong> CAPEX ☐ OPEX ☐</p>
+            <p><strong>Tipo de Proyecto:</strong> CAPEX ✅ OPEX ☐</p>
         </div>
 
         <div class="mt-5">
@@ -150,6 +150,31 @@
                         <td>Proveedor</td>
                         <td>Gerente general EPA El Salvador</td>
                     </tr>
+                    <tr>
+                        <td>Sofia Gutierrez</td>
+                        <td>Marketing</td>
+                        <td>Directora de Marketing</td>
+                    </tr>
+                    <tr>
+                        <td>Alejandro Pérez</td>
+                        <td>Operaciones</td>
+                        <td>Gerente de Operaciones</td>
+                    </tr>
+                    <tr>
+                        <td>Laura Mendoza</td>
+                        <td>Logística</td>
+                        <td>Coordinadora de Logística</td>
+                    </tr>
+                    <tr>
+                        <td>Ricardo Gómez</td>
+                        <td>Tecnología</td>
+                        <td>CTO - Director de Tecnología</td>
+                    </tr>
+                    <tr>
+                        <td>Mariana López</td>
+                        <td>Recursos Humanos</td>
+                        <td>Gerente de Recursos Humanos</td>
+                    </tr>
                 </tbody>
             </table>
         </div>
@@ -173,32 +198,52 @@
         <div class="mt-5">
             <h2>3. Análisis de la Situación</h2>
             <p>El proyecto WarehouseBot surge como una solución innovadora dentro del sector logístico y de gestión de inventarios, específicamente en el contexto de ferreterías y almacenes de gran escala, tomando como referencia el modelo de negocio de EPA. El objetivo principal es mejorar la eficiencia en la administración de productos mediante la implementación de robots autónomos, reduciendo errores humanos y optimizando tiempos de operación.</p>
-            <h3>Contexto y Usuarios Objetivo</h3>
-            <p>La solución está dirigida a empresas del sector retail, almacenes y centros de distribución que manejan grandes volúmenes de inventario y buscan automatizar procesos para aumentar su productividad. EPA, como modelo de referencia, es una ferretería que maneja una amplia gama de productos y requiere un sistema eficiente para la organización y transporte de mercancía dentro de sus instalaciones.
-                En este contexto, WarehouseBot proporcionará una simulación realista de un almacén automatizado, mostrando cómo la robótica puede mejorar la eficiencia en la gestión de inventarios. Además, la aplicación complementaria permitirá a los usuarios visualizar la actividad de los robots y evaluar métricas de desempeño
-                </p>
-                <h3>Opciones y Tecnologías para su Creación</h3>
-                <p>Para el desarrollo del proyecto se consideran las siguientes herramientas y programas:</p>
-                <ol>
-                    <li>Modelado y Simulación del Entorno<ul>
-                        <li>Blender o Unreal Engine 5 para la creación del entorno 3D del almacén.</li>
-                        <li>	Unity o Gazebo como posibles motores de simulación para las interacciones de los robots con el entorno.</li>
-                    </ul>
-                    </li>
-                    <li>Desarrollo de los Robots Autónomos
-                        <ul><li>Python y C++ para la programación de IA y navegación autónoma.</li>
-                        <li>ROS (Robot Operating System) para la simulación avanzada de la robótica.</li>
-                        <li>Algoritmos de machine learning y detección de objetos para mejorar la toma de decisiones de los robots.</li>
-                    </ul>
-                    </li>
-                    <li>Desarrollo de la Aplicación Complementaria
 
-                        <ul>
-                            <li>React Native para la creación de una aplicación multiplataforma que permita monitorear los robots.</li>
-                            <li>Firebase o Node.js con Express para gestionar la comunicación en tiempo real entre la simulación y la aplicación.</li>
-                        </ul>
-                    </li>
-                </ol>
+<h3>Contexto y Usuarios Objetivo</h3>
+<p>La solución está dirigida a empresas del sector retail, almacenes y centros de distribución que manejan grandes volúmenes de inventario y buscan automatizar procesos para aumentar su productividad. EPA, como modelo de referencia, maneja una amplia gama de productos y requiere un sistema eficiente para la organización y transporte de mercancía dentro de sus instalaciones.</p>
+<p>Actualmente, EPA enfrenta problemas en su plataforma web, donde los productos aparecen como "agotados" cuando no hay stock disponible. Esto ocasiona que los clientes abandonen la compra y busquen alternativas en la competencia. Para solucionar este inconveniente, WarehouseBot implementará un sistema de control de inventarios que se integrará con un ERP principal y permitirá un flujo más eficiente en la reposición de productos.</p>
+<p>El sistema automatizado monitoreará en tiempo real el nivel de stock y cuando detecte que un producto está por agotarse, enviará un requerimiento de compra de manera automática. Dependiendo del tipo de producto y su rotación, este requerimiento podrá gestionarse mediante:</p>
+<ul>
+    <li>Traslado de otro centro de distribución o almacén.</li>
+    <li>Compra directa a un proveedor.</li>
+    <li>Evaluación de continuidad de adquisición si el producto tiene baja rotación en el tiempo.</li>
+</ul>
+<p>Este enfoque permitirá minimizar la pérdida de ventas, capturar a más clientes y mejorar la experiencia de compra en la plataforma digital de la ferretería.</p>
+
+<h3>Opciones y Tecnologías para su Creación</h3>
+<p>Para el desarrollo del proyecto se consideran las siguientes herramientas y programas:</p>
+<ol>
+    <li>Sistema de Control de Inventarios
+        <ul>
+            <li>Base de datos SQL/NoSQL para almacenamiento y consulta eficiente del inventario.</li>
+            <li>Integración con ERP principal para la gestión de pedidos y proveedores.</li>
+            <li>API de comunicación entre el sistema de inventarios y la plataforma web.</li>
+            <li>Algoritmos de predicción de demanda basados en IA para anticipar reabastecimientos.</li>
+        </ul>
+    </li>
+    <li>Modelado y Simulación del Entorno
+        <ul>
+            <li>Blender o Unreal Engine 5 para la creación del entorno 3D del almacén.</li>
+            <li>Unity o Gazebo como motores de simulación para las interacciones de los robots con el entorno.</li>
+        </ul>
+    </li>
+    <li>Desarrollo de los Robots Autónomos
+        <ul>
+            <li>Python y C++ para la programación de IA y navegación autónoma.</li>
+            <li>ROS (Robot Operating System) para la simulación avanzada de la robótica.</li>
+            <li>Algoritmos de machine learning y detección de objetos para mejorar la toma de decisiones de los robots.</li>
+            <li>Sensores IoT para monitoreo en tiempo real del stock y localización de productos.</li>
+        </ul>
+    </li>
+    <li>Desarrollo de la Aplicación Complementaria
+        <ul>
+            <li>React Native para la creación de una aplicación multiplataforma que permita monitorear los robots y la gestión de inventarios.</li>
+            <li>Firebase o Node.js con Express para gestionar la comunicación en tiempo real entre la simulación y la aplicación.</li>
+        </ul>
+    </li>
+</ol>
+<p>Este análisis demuestra que WarehouseBot no solo es un modelo conceptual, sino que puede ser una solución factible para la automatización de almacenes, proporcionando un enfoque realista y aplicable en el ámbito industrial. Con la implementación de esta tecnología, se logrará una mejor administración del inventario, reducción de errores humanos y un aumento significativo en la eficiencia operativa de la ferretería.</p>
+
         </div>
         <div class="mt-5">
             <h2>3.1	ESTRATEGIAS, METAS Y OBJETIVOS DE LA EMPRESA</h2>
@@ -513,29 +558,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr><th>Desarrollo de la simulacion</th></tr>
-                    <tr><th>Inteligencia Artificial (IA)</th></tr>
-                    <tr><th>Base de datos</th></tr>
-                    <tr>
-                        <th>Pruebas de funcionamiento</th>
-                       
-                    </tr>
-                    <tr>
-                        <th>Documentación </th>
-                    </tr>
-                    <tr>
-                        <th>Seguridad del sistema</th>
-                    </tr>
-                    <tr>
-                        <th>Capacitacion delos usuarios</th>
-                    </tr>
-                    <tr>
-                        <th>Mantenimiento del sistema</th>
-                    </tr>
-                    <tr>
-                        <th>Optimización del rendimiento</th>
-                    </tr>
-                    <tr><th>Escalabilidad</th></tr>
+                    <tr><th>Bodega automatizada para ferreterías EPA</th></tr>
                 </tbody>
             </table>
 
@@ -595,7 +618,8 @@
 
         <div class="mt-5">
             <h2>4. Recomendación</h2>
-            <p>Se han identificado 7 acciones clave para abordar el problema, cada una vinculada a áreas tecnológicas específicas. A continuación, se analizan sus beneficios y desafíos:</p>
+            <h2>4.0.1 Analisis de las opciones</h2>
+            <p>Se han identificado 3 opciones clave para mejorar la eficiencia del sistema, cada una vinculada a soluciones tecnológicas específicas. A continuación, se analizan sus beneficios y desafíos:</p>
             <table class="table table-bordered">
                 <thead>
                     <tr>
@@ -606,44 +630,619 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Hardware + Robótica</td>
-                        <td>Permite la automatización eficiente del inventario con robots.</td>
-                        <td>Costo de adquisición e integración. Compatibilidad con otros sistemas.</td>
+                        <td>Plataforma Web</td>
+                        <td>
+                            <ul>
+                                <li>Facilita la compra en línea con opciones de pago seguro.</li>
+                                <li>Optimiza la gestión de inventario en tiempo real.</li>
+                                <li>Mejora la experiencia del usuario con un carrito de compras eficiente.</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Requiere capacitación para empleados.</li>
+                                <li>Es necesario garantizar la seguridad de los datos y pagos.</li>
+                                <li>Debe integrarse correctamente con el sistema ERP existente.</li>
+                            </ul>
+                        </td>
                     </tr>
                     <tr>
-                        <td>Bases de Datos</td>
-                        <td>Mejora la organización y trazabilidad del inventario. Facilita la toma de decisiones.</td>
-                        <td>Diseño eficiente y mantenimiento continuo. Seguridad de la información.</td>
+                        <td>Aplicación Móvil</td>
+                        <td>
+                            <ul>
+                                <li>Permite compras y seguimiento de pedidos desde dispositivos móviles.</li>
+                                <li>Notificaciones push para promociones y carritos abandonados.</li>
+                                <li>Geolocalización para ubicar la tienda más cercana.</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Desarrollo y mantenimiento para iOS y Android.</li>
+                                <li>Debe garantizar una buena velocidad de carga y experiencia de usuario.</li>
+                                <li>Necesita sincronización en tiempo real con la plataforma web.</li>
+                            </ul>
+                        </td>
                     </tr>
                     <tr>
-                        <td>Programación + Inteligencia Artificial</td>
-                        <td>Control preciso del robot y automatización de tareas.</td>
-                        <td>Desarrollo complejo y necesidad de pruebas rigurosas.</td>
+                        <td>Implementación de un Robot Autónomo</td>
+                        <td>
+                            <ul>
+                                <li>Automatiza el conteo de stock y reduce errores humanos.</li>
+                                <li>Optimiza la logística interna con navegación autónoma.</li>
+                                <li>Actualización en tiempo real de la base de datos de inventario.</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Alto costo inicial de desarrollo e implementación.</li>
+                                <li>Requiere mantenimiento continuo y actualizaciones.</li>
+                                <li>Debe integrarse con el sistema de gestión de inventarios.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="mt-5">
+            <h2>4.0.2 Análisis Financiero</h2>
+            <p>Para la implementación del proyecto, se deben considerar los siguientes costos estimados:</p>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Concepto</th>
+                        <th>Costo Aproximado (USD)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Compra de hardware y sensores</td>
+                        <td>$2,000 - $5,000</td>
                     </tr>
                     <tr>
-                        <td>Redes + Comunicaciones</td>
-                        <td>Permite la comunicación estable entre robots y servidores.</td>
-                        <td>Inversión en hardware y configuración óptima para evitar latencias.</td>
+                        <td>Desarrollo del software (programación e IA)</td>
+                        <td>$3,000 - $7,000</td>
                     </tr>
                     <tr>
-                        <td>Domótica + Robótica</td>
-                        <td>Ahorro de energía y mayor eficiencia operativa en almacenes.</td>
-                        <td>Integración con el sistema actual y compatibilidad con robots.</td>
+                        <td>Infraestructura de redes y comunicaciones</td>
+                        <td>$1,500 - $3,500</td>
                     </tr>
                     <tr>
-                        <td>Inteligencia Artificial + Bases de Datos</td>
-                        <td>Reduce tiempos de entrega y mejora la eficiencia operativa.</td>
-                        <td>Necesidad de entrenamiento y algoritmos avanzados.</td>
+                        <td>Servidor y base de datos</td>
+                        <td>$2,000 - $4,500</td>
                     </tr>
                     <tr>
-                        <td>Redes + Seguridad en Bases de Datos</td>
-                        <td>Previene ataques cibernéticos y protege la información del inventario.</td>
-                        <td>Implementación de protocolos de seguridad y actualizaciones constantes.</td>
+                        <td>Capacitación del personal</td>
+                        <td>$500 - $1,500</td>
+                    </tr>
+                    <tr>
+                        <td>Seguridad del sistema</td>
+                        <td>$1,000 - $3,000</td>
+                    </tr>
+                    <tr>
+                        <td>Otros costos (mantenimiento, pruebas, imprevistos)</td>
+                        <td>$1,000 - $2,500</td>
+                    </tr>
+                    <tr>
+                        <th>Total Aproximado</th>
+                        <th>$11,000 - $27,000</th>
+                    </tr>
+                </tbody>
+            </table>
+            <p><strong>Nota:</strong> Estos valores pueden variar según proveedores, tecnología elegida y necesidades específicas del proyecto.</p>
+        </div>
+        
+        <div class="mt-5">
+            <h2>4.0.3 Hitos del Desarrollo e Implementación</h2>
+            <p>Para llevar a cabo el proyecto, se proponen los siguientes hitos clave:</p>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Hito</th>
+                        <th>Descripción</th>
+                        <th>Fecha Estimada</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1. Investigación y planificación</td>
+                        <td>Definir requisitos técnicos y dividir tareas del equipo.</td>
+                        <td>20 ene - 5 feb</td>
+                    </tr>
+                    <tr>
+                        <td>2. Adquisición de hardware y configuración de redes</td>
+                        <td>Comprar y ensamblar sensores, motores y microcontroladores.</td>
+                        <td>6 feb - 20 feb</td>
+                    </tr>
+                    <tr>
+                        <td>3. Desarrollo de la base de datos y software</td>
+                        <td>Programación de la gestión de inventario, rutas y simulación.</td>
+                        <td>21 feb - 30 abr</td>
+                    </tr>
+                    <tr>
+                        <td>4. Integración de hardware y software</td>
+                        <td>Pruebas de comunicación entre el sistema y los robots.</td>
+                        <td>1 may - 15 may</td>
+                    </tr>
+                    <tr>
+                        <td>5. Pruebas de funcionamiento y optimización</td>
+                        <td>Simulación del sistema en diferentes escenarios.</td>
+                        <td>16 may - 30 may</td>
+                    </tr>
+                    <tr>
+                        <td>6. Documentación y preparación final</td>
+                        <td>Creación de informe y presentación del proyecto.</td>
+                        <td>1 jun - 10 jun</td>
+                    </tr>
+                    <tr>
+                        <td>7. Implementación final y exposición</td>
+                        <td>Presentación y demostración del proyecto final.</td>
+                        <td>15 jun</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="mt-5">
+            <h2>4.1 Enunciado</h2>
+            <p>Se presentan las acciones posibles junto con el análisis de sus resultados, detallando ventajas y desventajas.</p>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Acciones Posibles</th>
+                        <th>Resultados del Análisis</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Implementación de una plataforma web</td>
+                        <td>
+                            Se desarrollará una plataforma web para gestionar el inventario y facilitar la compra en línea.
+                            <br><strong>Ventajas:</strong>
+                            <ul>
+                                <li>Accesibilidad desde cualquier dispositivo con internet.</li>
+                                <li>Mejora en la organización del inventario.</li>
+                                <li>Facilita la venta en línea con carrito de compras.</li>
+                            </ul>
+                            <strong>Desventajas:</strong>
+                            <ul>
+                                <li>Requiere mantenimiento y actualizaciones constantes.</li>
+                                <li>Posibles vulnerabilidades de seguridad.</li>
+                                <li>Dependencia de una conexión estable a internet.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Desarrollo de una aplicación móvil</td>
+                        <td>
+                            Se diseñará una app móvil optimizada para mejorar la experiencia del usuario.
+                            <br><strong>Ventajas:</strong>
+                            <ul>
+                                <li>Mayor comodidad para los usuarios en dispositivos móviles.</li>
+                                <li>Permite notificaciones push y seguimiento de pedidos.</li>
+                                <li>Posibilidad de integración con geolocalización.</li>
+                            </ul>
+                            <strong>Desventajas:</strong>
+                            <ul>
+                                <li>Mayor costo y tiempo de desarrollo.</li>
+                                <li>Necesidad de compatibilidad con iOS y Android.</li>
+                                <li>Dependencia de actualizaciones en tiendas de aplicaciones.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Implementación de un robot autónomo</td>
+                        <td>
+                            Se incorporará un robot autónomo para optimizar el control del inventario.
+                            <br><strong>Ventajas:</strong>
+                            <ul>
+                                <li>Automatización del conteo de stock y escaneo de códigos.</li>
+                                <li>Actualización en tiempo real de la base de datos.</li>
+                                <li>Reducción de errores humanos en la gestión del inventario.</li>
+                            </ul>
+                            <strong>Desventajas:</strong>
+                            <ul>
+                                <li>Alto costo de adquisición e implementación.</li>
+                                <li>Necesidad de capacitación del personal.</li>
+                                <li>Posibles fallos técnicos que requieren mantenimiento.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="mt-5">
+            <h2>Restricciones y Limitaciones</h2>
+            <p>Se detallan las restricciones y limitaciones que podrían afectar la implementación de cada acción posible.</p>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Acciones Posibles</th>
+                        <th>Restricciones y Limitaciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Implementación de una plataforma web</td>
+                        <td>
+                            <strong>Restricciones:</strong>
+                            <ul>
+                                <li>Requiere una conexión estable a internet para su correcto funcionamiento.</li>
+                                <li>Debe cumplir con estándares de seguridad para proteger los datos.</li>
+                                <li>Dependencia de servidores externos para almacenamiento y procesamiento.</li>
+                            </ul>
+                            <strong>Limitaciones:</strong>
+                            <ul>
+                                <li>Posibles vulnerabilidades ante ciberataques y fallas de seguridad.</li>
+                                <li>Costos asociados al mantenimiento y actualización del sistema.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Desarrollo de una aplicación móvil</td>
+                        <td>
+                            <strong>Restricciones:</strong>
+                            <ul>
+                                <li>Debe ser compatible con múltiples dispositivos y sistemas operativos (Android e iOS).</li>
+                                <li>Las actualizaciones y distribución dependen de las políticas de Google Play y App Store.</li>
+                                <li>Debe cumplir con normativas de seguridad para proteger la información del usuario.</li>
+                            </ul>
+                            <strong>Limitaciones:</strong>
+                            <ul>
+                                <li>Consumo de almacenamiento y recursos en el dispositivo del usuario.</li>
+                                <li>Requiere actualizaciones frecuentes para corregir errores y mejorar funcionalidades.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Implementación de un robot autónomo</td>
+                        <td>
+                            <strong>Restricciones:</strong>
+                            <ul>
+                                <li>Debe integrarse con el sistema de gestión de inventarios existente.</li>
+                                <li>Debe operar dentro de los espacios y estructuras del almacén.</li>
+                                <li>Requiere un mantenimiento periódico para garantizar su correcto funcionamiento.</li>
+                            </ul>
+                            <strong>Limitaciones:</strong>
+                            <ul>
+                                <li>Alto costo inicial de adquisición e implementación.</li>
+                                <li>Necesidad de capacitación del personal para su operación y supervisión.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="mt-5">
+            <h2>Supuestos Estratégicos</h2>
+            <p>Se presentan los supuestos estratégicos considerados para la implementación de cada acción posible.</p>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Acciones Posibles</th>
+                        <th>Supuestos Estratégicos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Implementación de una plataforma web</td>
+                        <td>
+                            <ul>
+                                <li>Se espera que los empleados y clientes tengan acceso a internet de manera estable.</li>
+                                <li>La plataforma será escalable para futuras mejoras y expansión de funcionalidades.</li>
+                                <li>Los usuarios adoptarán el sistema con una curva de aprendizaje mínima tras la capacitación.</li>
+                                <li>El sistema cumplirá con las normativas de seguridad y protección de datos.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Desarrollo de una aplicación móvil</td>
+                        <td>
+                            <ul>
+                                <li>Se espera que la mayoría de los clientes usen smartphones compatibles con la app.</li>
+                                <li>Las notificaciones push mejorarán la retención y fidelización de usuarios.</li>
+                                <li>El sistema de geolocalización funcionará con precisión para mostrar tiendas cercanas.</li>
+                                <li>La aplicación será intuitiva y fácil de usar para minimizar soporte técnico.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Implementación de un robot autónomo</td>
+                        <td>
+                            <ul>
+                                <li>El robot operará en un entorno controlado sin interferencias externas.</li>
+                                <li>Se contará con personal capacitado para su supervisión y mantenimiento.</li>
+                                <li>El sistema de navegación será lo suficientemente preciso para evitar errores en inventarios.</li>
+                                <li>El robot podrá integrarse sin problemas con los sistemas actuales de gestión de almacenes.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="mt-5">
+            <h2>Riesgos</h2>
+            <p>A continuación, se identifican los posibles riesgos asociados a cada acción implementada en el proyecto.</p>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Acciones Posibles</th>
+                        <th>Riesgos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Implementación de una plataforma web</td>
+                        <td>
+                            <ul>
+                                <li>Posibles fallos de seguridad que expongan datos sensibles.</li>
+                                <li>Problemas de compatibilidad con dispositivos o navegadores antiguos.</li>
+                                <li>Falta de adopción por parte de los empleados o clientes.</li>
+                                <li>Sobrecarga del sistema si la demanda supera la capacidad del servidor.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Desarrollo de una aplicación móvil</td>
+                        <td>
+                            <ul>
+                                <li>Riesgo de bajo número de descargas y uso por parte de los clientes.</li>
+                                <li>Fallos en la geolocalización que afecten la experiencia del usuario.</li>
+                                <li>Problemas con actualizaciones en diferentes sistemas operativos (Android/iOS).</li>
+                                <li>Consumo excesivo de batería o datos móviles, causando rechazo de los usuarios.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Implementación de un robot autónomo</td>
+                        <td>
+                            <ul>
+                                <li>Errores en la navegación que generen colisiones o bloqueos en el almacén.</li>
+                                <li>Fallas técnicas que detengan la operación del robot.</li>
+                                <li>Altos costos de mantenimiento y reparación inesperados.</li>
+                                <li>Resistencia del personal al uso de tecnología automatizada.</li>
+                            </ul>
+                        </td>
                     </tr>
                 </tbody>
             </table>
         </div>
 
+        <div class="mt-5">
+            <h2>Análisis Financiero</h2>
+            <p>A continuación, se identifican los riesgos del análisis financiero asociado a cada acción implementada en el proyecto WarehouseBot.</p>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Acciones Posibles</th>
+                        <th>Riesgos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Implementación de una plataforma web</td>
+                        <td>
+                            <ul>
+                                <li><strong>Análisis Financiero:</strong>
+                                    <ul>
+                                        <li>Desarrollo del software: $3,000 - $7,000 USD para la creación y mantenimiento de la plataforma web.</li>
+                                        <li>Infraestructura de redes y comunicaciones: $1,500 - $3,500 USD para garantizar la conectividad adecuada.</li>
+                                        <li>Seguridad del sistema: $1,000 - $3,000 USD para proteger la plataforma contra posibles ataques y fallos de seguridad.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Desarrollo de una aplicación móvil</td>
+                        <td>
+                            <ul>
+                                <li><strong>Análisis Financiero:</strong>
+                                    <ul>
+                                        <li>Desarrollo del software: $3,000 - $7,000 USD para el desarrollo de la app móvil.</li>
+                                        <li>Capacitación del personal: $500 - $1,500 USD para asegurar que el equipo utilice correctamente la aplicación.</li>
+                                        <li>Otros costos (mantenimiento y pruebas): $1,000 - $2,500 USD para actualizar y mantener la aplicación.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Implementación de un robot autónomo</td>
+                        <td>
+                            <ul>
+                                <li><strong>Análisis Financiero:</strong>
+                                    <ul>
+                                        <li>Compra de hardware y sensores: $2,000 - $5,000 USD para adquirir el hardware necesario.</li>
+                                        <li>Desarrollo del software: $3,000 - $7,000 USD para la programación y control del robot.</li>
+                                        <li>Otros costos (mantenimiento y reparaciones): $1,000 - $2,500 USD para asegurar el correcto funcionamiento del robot.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="mt-5">
+            <h2>4.2 Enfoque de Implementación: de la Mejor Opción</h2>
+            <p>A continuación, se detallan los hitos del proyecto, organizados por las tres acciones posibles y sus fechas de entrega correspondientes.</p>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Acción Posible</th>
+                        <th>Hito</th>
+                        <th>Fecha de Entrega</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Implementación de una plataforma web -->
+                    <tr>
+                        <td rowspan="3"><strong>Plataforma Web</strong></td>
+                        <td>H1. Presentación Caso de Negocio</td>
+                        <td>5 – 6 marzo 2025</td>
+                    </tr>
+                    <tr>
+                        <td>H5. Desarrollo de software (IA)</td>
+                        <td>20 abril – 10 mayo 2025</td>
+                    </tr>
+                    <tr>
+                        <td>H10. Entrega final al cliente</td>
+                        <td>15 junio 2025</td>
+                    </tr>
+                    <!-- Desarrollo de una aplicación móvil -->
+                    <tr>
+                        <td rowspan="3"><strong>Aplicación Móvil</strong></td>
+                        <td>H2. Revisión de Requerimientos</td>
+                        <td>12 – 15 marzo 2025</td>
+                    </tr>
+                    <tr>
+                        <td>H7. Pruebas de funcionalidad</td>
+                        <td>20 mayo – 1 junio 2025</td>
+                    </tr>
+                    <tr>
+                        <td>H9. Capacitación del personal</td>
+                        <td>10 – 12 junio 2025</td>
+                    </tr>
+                    <!-- Implementación de un robot autónomo -->
+                    <tr>
+                        <td rowspan="3"><strong>Robot Autónomo</strong></td>
+                        <td>H3. Prototipo inicial de simulación</td>
+                        <td>1 – 5 abril 2025</td>
+                    </tr>
+                    <tr>
+                        <td>H6. Integración de redes</td>
+                        <td>15 mayo 2025</td>
+                    </tr>
+                    <tr>
+                        <td>H8. Revisión de seguridad</td>
+                        <td>5 junio 2025</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="mt-5">
+            <h2>Roles y Responsabilidades</h2>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Rol</th>
+                        <th>Responsabilidad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Líder de Proyecto (Jonathan Flores)</td>
+                        <td>
+                            <ul>
+                                <li>Supervisar el progreso general del proyecto.</li>
+                                <li>Coordinar la comunicación entre el equipo y el cliente.</li>
+                                <li>Asegurar que los plazos y entregables sean cumplidos.</li>
+                                <li>Tomar decisiones estratégicas en función de los avances del proyecto.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Desarrollador de Software (Julio Cesar)</td>
+                        <td>
+                            <ul>
+                                <li>Desarrollar la programación del software del robot autónomo.</li>
+                                <li>Implementar los algoritmos de inteligencia artificial para optimizar las rutas del robot.</li>
+                                <li>Colaborar en la integración del sistema con la base de datos.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Desarrollador de Software (Jimmy Rivas)</td>
+                        <td>
+                            <ul>
+                                <li>Apoyar en el desarrollo de la programación del software.</li>
+                                <li>Trabajar en la integración de la base de datos y el servidor.</li>
+                                <li>Realizar pruebas de funcionalidad del sistema.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Jefe de Ventas y Desarrollador (Fredy Funes)</td>
+                        <td>
+                            <ul>
+                                <li>Supervisar las interacciones con el cliente y asegurar que sus requerimientos sean cubiertos.</li>
+                                <li>Colaborar en el desarrollo de la interfaz del usuario.</li>
+                                <li>Brindar soporte en la capacitación del personal.</li>
+                                <li>Monitorear el progreso en las fases finales del proyecto.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Especialista en Redes y Comunicaciones (Jonathan Flores)</td>
+                        <td>
+                            <ul>
+                                <li>Diseñar y configurar la infraestructura de redes para garantizar la comunicación entre los robots y la base de datos.</li>
+                                <li>Asegurar que las comunicaciones sean estables y eficientes durante la implementación.</li>
+                                <li>Implementar protocolos de seguridad en las redes.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Especialista en Base de Datos (Julio Cesar / Jimmy Rivas)</td>
+                        <td>
+                            <ul>
+                                <li>Gestionar y optimizar la base de datos que almacenará los registros de inventario y otras informaciones clave.</li>
+                                <li>Garantizar la integridad y seguridad de los datos durante todo el proceso.</li>
+                                <li>Colaborar en la configuración del servidor y la integración con el sistema de robótica.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Especialista en Robótica (Julio Cesar / Fredy Funes)</td>
+                        <td>
+                            <ul>
+                                <li>Supervisar la implementación y calibración de los robots autónomos.</li>
+                                <li>Trabajar en la integración de los robots con los sistemas de software, IA y base de datos.</li>
+                                <li>Realizar pruebas de funcionamiento de los robots y realizar ajustes cuando sea necesario.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Especialista en IA (Jonathan Flores / Julio Cesar)</td>
+                        <td>
+                            <ul>
+                                <li>Desarrollar los algoritmos de inteligencia artificial para la optimización de las rutas y el control autónomo del robot.</li>
+                                <li>Realizar pruebas y ajustes en la IA para mejorar su rendimiento.</li>
+                                <li>Colaborar en la integración de IA en la plataforma de software.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Responsable de Seguridad (Julio Cesar)</td>
+                        <td>
+                            <ul>
+                                <li>Asegurar que el sistema y la infraestructura de redes cumplan con los estándares de seguridad.</li>
+                                <li>Implementar medidas de protección ante posibles fallos o ataques cibernéticos.</li>
+                                <li>Realizar pruebas de seguridad para garantizar la fiabilidad del sistema.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Responsable de Capacitación (Fredy Funes)</td>
+                        <td>
+                            <ul>
+                                <li>Diseñar e impartir sesiones de capacitación para el personal que operará el sistema de robótica.</li>
+                                <li>Asegurar que los usuarios finales comprendan cómo utilizar el sistema y aprovechar sus funcionalidades.</li>
+                                <li>Proveer soporte post-implementación.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        
         <div class="mt-5">
             <h2>5. Evaluación</h2>
             <table class="table table-bordered">
