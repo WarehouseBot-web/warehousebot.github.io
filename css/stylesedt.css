@@ -1,0 +1,296 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            padding: 20px;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px 0;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            color: #10516c;
+            margin-bottom: 15px;
+            font-size: 2.2rem;
+        }
+        
+        .description {
+            color: #666;
+            max-width: 800px;
+            margin: 0 auto 25px;
+            line-height: 1.6;
+        }
+        
+        .view-button {
+            background-color: #10516c;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 16px;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 8px rgba(16, 81, 108, 0.3);
+        }
+        
+        .view-button:hover {
+            background-color: #0c3d51;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(16, 81, 108, 0.4);
+        }
+        
+        .edt-wrapper {
+            display: none;
+            margin-top: 30px;
+            padding: 30px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            overflow-x: auto;
+        }
+        
+        .edt-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-width: 1200px;
+        }
+        
+        .node {
+            background-color: #10516c;
+            color: white;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            min-width: 180px;
+            margin: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 60px;
+        }
+        
+        .main-node {
+            width: 300px;
+            min-height: 80px;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        
+        .level1-container {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            position: relative;
+        }
+        
+        .level1-container::before {
+            content: '';
+            position: absolute;
+            top: -30px;
+            left: 50%;
+            width: 2px;
+            height: 30px;
+            background-color: #10516c;
+        }
+        
+        .branch {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+        
+        .branch::before {
+            content: '';
+            position: absolute;
+            top: -30px;
+            left: 50%;
+            width: 2px;
+            height: 30px;
+            background-color: #10516c;
+        }
+        
+        .level2-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 30px;
+            position: relative;
+        }
+        
+        .level2-container::before {
+            content: '';
+            position: absolute;
+            top: -30px;
+            left: 50%;
+            width: 2px;
+            height: 30px;
+            background-color: #10516c;
+        }
+        
+        .level3-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 30px;
+            position: relative;
+            max-width: 800px;
+        }
+        
+        .level3-container::before {
+            content: '';
+            position: absolute;
+            top: -30px;
+            left: 50%;
+            width: 2px;
+            height: 30px;
+            background-color: #10516c;
+        }
+        
+        .level3-item {
+            flex: 0 0 auto;
+            margin: 5px;
+            position: relative;
+        }
+        
+        .level3-item::before {
+            content: '';
+            position: absolute;
+            top: -30px;
+            left: 50%;
+            width: 2px;
+            height: 30px;
+            background-color: #10516c;
+        }
+        
+        .horizontal-line {
+            height: 2px;
+            background-color: #10516c;
+            position: absolute;
+        }
+        
+        .level1-line {
+            top: -30px;
+            width: 100%;
+        }
+        
+        /* Líneas horizontales específicas para cada rama */
+        .branch-items {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            position: relative;
+            margin-top: 30px;
+        }
+        
+        .branch-items::before {
+            content: '';
+            position: absolute;
+            top: -30px;
+            left: 50%;
+            width: 2px;
+            height: 30px;
+            background-color: #10516c;
+        }
+        
+        .branch-item {
+            position: relative;
+            margin: 10px;
+        }
+        
+        .branch-item::before {
+            content: '';
+            position: absolute;
+            top: -30px;
+            left: 50%;
+            width: 2px;
+            height: 30px;
+            background-color: #10516c;
+        }
+        
+        /* Líneas horizontales que conectan los nodos del mismo nivel */
+        .horizontal-connector {
+            position: absolute;
+            height: 2px;
+            background-color: #10516c;
+        }
+        
+        .main-connector {
+            top: 180px;
+            left: 20%;
+            width: 60%;
+        }
+        
+        /* Conector para las subramas */
+        .sub-connector {
+            height: 2px;
+            background-color: #10516c;
+            position: absolute;
+            width: 80%;
+            top: -30px;
+            left: 10%;
+        }
+        
+        /* Estructura específica para cada sección principal */
+        .section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 25%;
+            position: relative;
+        }
+        
+        /* Animación para mostrar el diagrama */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .show-edt {
+            display: block;
+            animation: fadeIn 0.6s ease-out;
+        }
+        
+        /* Responsive para pantallas más pequeñas */
+        @media (max-width: 1200px) {
+            .edt-container {
+                transform: scale(0.85);
+                transform-origin: top center;
+            }
+        }
+        
+        @media (max-width: 900px) {
+            .edt-container {
+                transform: scale(0.7);
+                transform-origin: top center;
+            }
+            
+            .header {
+                padding: 20px 10px;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+        }

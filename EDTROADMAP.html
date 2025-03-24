@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDT - Implementación de WarehouseBot para Almacenes EPA</title>
+    <link rel="icon" href="img/icono_logo.ico" type="image/x-icon"> <!-- Favicon agregado -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/stylesedt.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Proyecto WarehouseBot para Almacenes EPA</h1>
+            <p class="description">
+                El proyecto WarehouseBot es una iniciativa para la automatización de almacenes mediante robots 
+                autónomos inteligentes. A continuación se presenta la Estructura de Desglose de Trabajo (EDT) 
+                que muestra todos los componentes del proyecto.
+            </p>
+            <button id="viewEDT" class="view-button">Ver EDT del Proyecto</button>
+        </div>
+        
+        <div id="edtWrapper" class="edt-wrapper" style="display: none;">
+            <!-- Imagen EDT -->
+            <img src="img/EDT.png" alt="EDT del Proyecto WarehouseBot" class="img-fluid">
+        </div>
+
+        <div class="header">
+            <h1>Roadmap del Proyecto WarehouseBot</h1>
+            <p class="description">
+                A continuación se presenta el ROADMAP que muestra las fechas en que se desarrollará el proyecto.
+            </p>
+            <button id="viewRoadmap" class="view-button">Ver ROADMAP del Proyecto</button>
+        </div>
+
+        <div id="roadmapWrapper" class="edt-wrapper" style="display: none;">
+            <!-- Imagen Roadmap -->
+            <img src="img/roadmap.png" alt="Roadmap del Proyecto WarehouseBot" class="img-fluid">
+        </div>
+    </div>
+
+    <table class="table table-bordered mt-4">
+        <thead>
+            <tr>
+                <th colspan="2" class="text-center bg-primary text-white">Detalles del Proyecto - ID#1.1.1</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Cuenta control ID</strong></td>
+                <td>#1.1</td>
+            </tr>
+            <tr>
+                <td><strong>Última Actualización</strong></td>
+                <td>25 enero 2025</td>
+            </tr>
+            <tr>
+                <td><strong>Responsable</strong></td>
+                <td>Jonathan Flores</td>
+            </tr>
+            <tr>
+                <td><strong>Descripción</strong></td>
+                <td>Base de datos</td>
+            </tr>
+            <tr>
+                <td><strong>Criterio de aceptación</strong></td>
+                <td>La base de datos debe estar estructurada, normalizada y operativa, lista para pruebas e integración con la plataforma.</td>
+            </tr>
+            <tr>
+                <td><strong>Entregables</strong></td>
+                <td>Modelo entidad-relación (MER), Script de creación de la base de datos, Documentación del esquema de la base de datos.</td>
+            </tr>
+            <tr>
+                <td><strong>Supuestos</strong></td>
+                <td>Se cuenta con un motor de base de datos adecuado y acceso a servidores de prueba. La estructura de datos ha sido previamente definida en base a los requerimientos del proyecto.</td>
+            </tr>
+            <tr>
+                <td><strong>Recursos Asignados</strong></td>
+                <td>Servidor local o en la nube para pruebas, Software de gestión de bases de datos (MySQL, PostgreSQL u otro).</td>
+            </tr>
+            <tr>
+                <td><strong>Duración</strong></td>
+                <td>44 horas (6 días hábiles).</td>
+            </tr>
+            <tr>
+                <td><strong>Hitos</strong></td>
+                <td>Finalización del diseño y despliegue inicial de la base de datos el 25 de enero de 2025.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="table table-bordered mt-4">
+        <thead>
+            <tr>
+                <th colspan="2" class="text-center bg-primary text-white">Detalles del Proyecto - ID#1.1.2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Cuenta control ID</strong></td>
+                <td>#1.1</td>
+            </tr>
+            <tr>
+                <td><strong>Última Actualización</strong></td>
+                <td>1 febrero 2025</td>
+            </tr>
+            <tr>
+                <td><strong>Responsable</strong></td>
+                <td>Jonathan Flores</td>
+            </tr>
+            <tr>
+                <td><strong>Descripción</strong></td>
+                <td>Software</td>
+            </tr>
+            <tr>
+                <td><strong>Criterio de aceptación</strong></td>
+                <td>El software debe estar funcional, con la capacidad de conectarse a la base de datos y realizar operaciones básicas (crear, leer, actualizar y eliminar datos).</td>
+            </tr>
+            <tr>
+                <td><strong>Entregables</strong></td>
+                <td>Código fuente del software, Documentación técnica sobre la implementación, Manual de usuario para funciones básicas.</td>
+            </tr>
+            <tr>
+                <td><strong>Supuestos</strong></td>
+                <td>Se cuenta con un entorno de desarrollo adecuado, La base de datos está completamente operativa antes del inicio del desarrollo.</td>
+            </tr>
+            <tr>
+                <td><strong>Recursos Asignados</strong></td>
+                <td>Entorno de desarrollo integrado (IDE), Servidor local para pruebas, Frameworks y librerías necesarias para el desarrollo.</td>
+            </tr>
+            <tr>
+                <td><strong>Duración</strong></td>
+                <td>16 horas (2 días hábiles).</td>
+            </tr>
+            <tr>
+                <td><strong>Hitos</strong></td>
+                <td>Finalización del desarrollo y prueba inicial del software el 1 de febrero de 2025.</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <table class="table table-bordered mt-4">
+        <thead>
+            <tr>
+                <th colspan="2" class="text-center bg-primary text-white">Detalles del Proyecto - ID#1.1.2.1</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Cuenta control ID</strong></td>
+                <td>#1.1</td>
+            </tr>
+            <tr>
+                <td><strong>Última Actualización</strong></td>
+                <td>1 febrero 2025</td>
+            </tr>
+            <tr>
+                <td><strong>Responsable</strong></td>
+                <td>Jonathan Flores</td>
+            </tr>
+            <tr>
+                <td><strong>Descripción</strong></td>
+                <td>IA</td>
+            </tr>
+            <tr>
+                <td><strong>Criterio de aceptación</strong></td>
+                <td>La IA debe estar operativa dentro del software, con funcionalidades básicas implementadas y pruebas iniciales exitosas.</td>
+            </tr>
+            <tr>
+                <td><strong>Entregables</strong></td>
+                <td>Modelo de IA entrenado y documentado, Código de integración con el software, Reporte de pruebas y ajustes realizados.</td>
+            </tr>
+            <tr>
+                <td><strong>Supuestos</strong></td>
+                <td>Se cuenta con datasets adecuados para el entrenamiento de la IA, El software base está funcional antes de la integración de la IA.</td>
+            </tr>
+            <tr>
+                <td><strong>Recursos Asignados</strong></td>
+                <td>Librerías y frameworks de IA (TensorFlow, PyTorch u otros), Hardware adecuado para pruebas y entrenamiento del modelo.</td>
+            </tr>
+            <tr>
+                <td><strong>Duración</strong></td>
+                <td>28 horas (4 días hábiles).</td>
+            </tr>
+            <tr>
+                <td><strong>Hitos</strong></td>
+                <td>Finalización del desarrollo y prueba inicial del software el 1 de febrero de 2025.</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <table class="table table-bordered mt-4">
+        <thead>
+            <tr>
+                <th colspan="2" class="text-center bg-primary text-white">Detalles del Proyecto - ID#1.1.3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Cuenta control ID</strong></td>
+                <td>#1.1</td>
+            </tr>
+            <tr>
+                <td><strong>Última Actualización</strong></td>
+                <td>8 febrero 2025</td>
+            </tr>
+            <tr>
+                <td><strong>Responsable</strong></td>
+                <td>Jonathan Flores</td>
+            </tr>
+            <tr>
+                <td><strong>Descripción</strong></td>
+                <td>Hardware</td>
+            </tr>
+            <tr>
+                <td><strong>Criterio de aceptación</strong></td>
+                <td>El hardware debe estar correctamente configurado y probado, garantizando su funcionamiento estable con el software y la base de datos.</td>
+            </tr>
+            <tr>
+                <td><strong>Entregables</strong></td>
+                <td>Lista de componentes y especificaciones técnicas, Informe de configuración y pruebas de rendimiento, Registro de compatibilidad con el software.</td>
+            </tr>
+            <tr>
+                <td><strong>Supuestos</strong></td>
+                <td>Se cuenta con el hardware necesario antes de la configuración, El software y la base de datos están listos para pruebas en el hardware.</td>
+            </tr>
+            <tr>
+                <td><strong>Recursos Asignados</strong></td>
+                <td>Servidores y equipos físicos, Herramientas de diagnóstico y monitoreo de hardware.</td>
+            </tr>
+            <tr>
+                <td><strong>Duración</strong></td>
+                <td>16 horas (2 días hábiles).</td>
+            </tr>
+            <tr>
+                <td><strong>Hitos</strong></td>
+                <td>Finalización de la configuración y pruebas del hardware el 8 de febrero de 2025.</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <table class="table table-bordered mt-4">
+        <thead>
+            <tr>
+                <th colspan="2" class="text-center bg-primary text-white">Detalles del Proyecto - ID#1.1.4</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Cuenta control ID</strong></td>
+                <td>#1.1</td>
+            </tr>
+            <tr>
+                <td><strong>Última Actualización</strong></td>
+                <td>15 febrero 2025</td>
+            </tr>
+            <tr>
+                <td><strong>Responsable</strong></td>
+                <td>Jonathan Flores</td>
+            </tr>
+            <tr>
+                <td><strong>Descripción</strong></td>
+                <td>Redes</td>
+            </tr>
+            <tr>
+                <td><strong>Criterio de aceptación</strong></td>
+                <td>La red debe estar completamente configurada, con conectividad estable y medidas de seguridad implementadas para el correcto funcionamiento del sistema.</td>
+            </tr>
+            <tr>
+                <td><strong>Entregables</strong></td>
+                <td>Esquema de red y topología implementada, Configuración de dispositivos de red (switches, routers, firewall), Pruebas de conectividad y documentación técnica.</td>
+            </tr>
+            <tr>
+                <td><strong>Supuestos</strong></td>
+                <td>Se cuenta con los equipos de red necesarios antes del inicio de la configuración, El hardware y software están listos para ser integrados a la red.</td>
+            </tr>
+            <tr>
+                <td><strong>Recursos Asignados</strong></td>
+                <td>Equipos de red (routers, switches, cables, puntos de acceso), Herramientas de monitoreo y pruebas de red.</td>
+            </tr>
+            <tr>
+                <td><strong>Duración</strong></td>
+                <td>48 horas (6 días hábiles, desde la semana 3 hasta la semana 4).</td>
+            </tr>
+            <tr>
+                <td><strong>Hitos</strong></td>
+                <td>Finalización de la configuración e implementación de la red el 15 de febrero de 2025.</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <table class="table table-bordered mt-4">
+        <thead>
+            <tr>
+                <th colspan="2" class="text-center bg-primary text-white">Detalles del Proyecto - ID#1.1.4.1</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Cuenta control ID</strong></td>
+                <td>#1.1</td>
+            </tr>
+            <tr>
+                <td><strong>Última Actualización</strong></td>
+                <td>15 febrero 2025</td>
+            </tr>
+            <tr>
+                <td><strong>Responsable</strong></td>
+                <td>Jonathan Flores</td>
+            </tr>
+            <tr>
+                <td><strong>Descripción</strong></td>
+                <td>Comunicaciones</td>
+            </tr>
+            <tr>
+                <td><strong>Criterio de aceptación</strong></td>
+                <td>Los sistemas de comunicación deben estar completamente operativos, con pruebas de conectividad y rendimiento satisfactorias.</td>
+            </tr>
+            <tr>
+                <td><strong>Entregables</strong></td>
+                <td>Configuración de protocolos de comunicación, Documentación de la infraestructura de comunicaciones, Reporte de pruebas de conectividad y estabilidad.</td>
+            </tr>
+            <tr>
+                <td><strong>Supuestos</strong></td>
+                <td>La infraestructura de red debe estar en funcionamiento antes de la configuración de las comunicaciones, Se cuenta con los equipos y herramientas necesarios para la implementación.</td>
+            </tr>
+            <tr>
+                <td><strong>Recursos Asignados</strong></td>
+                <td>Dispositivos de comunicación (switches, routers, puntos de acceso), Software de monitoreo y prueba de comunicación.</td>
+            </tr>
+            <tr>
+                <td><strong>Duración</strong></td>
+                <td>24 horas (3 días hábiles, en paralelo con la configuración de redes).</td>
+            </tr>
+            <tr>
+                <td><strong>Hitos</strong></td>
+                <td>Finalización de la configuración y pruebas de comunicaciones el 15 de febrero de 2025.</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <table class="table table-bordered mt-4">
+        <thead>
+            <tr>
+                <th colspan="2" class="text-center bg-primary text-white">Detalles del Proyecto - ID#1.2.1</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Cuenta control ID</strong></td>
+                <td>#1.2</td>
+            </tr>
+            <tr>
+                <td><strong>Última Actualización</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><strong>Responsable</strong></td>
+                <td>Julio Sánchez</td>
+            </tr>
+            <tr>
+                <td><strong>Descripción</strong></td>
+                <td>Diseño Virtual</td>
+            </tr>
+            <tr>
+                <td><strong>Criterio de aceptación</strong></td>
+                <td>Diseño aprobado y validado para implementación.</td>
+            </tr>
+            <tr>
+                <td><strong>Entregables</strong></td>
+                <td>Documentación del diseño, prototipos digitales.</td>
+            </tr>
+            <tr>
+                <td><strong>Supuestos</strong></td>
+                <td>Se cuenta con herramientas de modelado 3D y software adecuado.</td>
+            </tr>
+            <tr>
+                <td><strong>Recursos Asignados</strong></td>
+                <td>Software de diseño, workstation.</td>
+            </tr>
+            <tr>
+                <td><strong>Duración</strong></td>
+                <td>176 horas (6 semanas).</td>
+            </tr>
+            <tr>
+                <td><strong>Hitos</strong></td>
+                <td>Finalización del diseño conceptual el sábado 1 de marzo de 2025.</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <table class="table table-bordered mt-4">
+        <thead>
+            <tr>
+                <th colspan="2" class="text-center bg-primary text-white">Detalles del Proyecto - ID#1.2.1.1</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Cuenta control ID</strong></td>
+                <td>#1.2</td>
+            </tr>
+            <tr>
+                <td><strong>Última Actualización</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><strong>Responsable</strong></td>
+                <td>Julio Sánchez</td>
+            </tr>
+            <tr>
+                <td><strong>Descripción</strong></td>
+                <td>Robótica</td>
+            </tr>
+            <tr>
+                <td><strong>Criterio de aceptación</strong></td>
+                <td>Componentes mecánicos y electrónicos ensamblados y validados.</td>
+            </tr>
+            <tr>
+                <td><strong>Entregables</strong></td>
+                <td>Estructura del robot ensamblada y lista para pruebas.</td>
+            </tr>
+            <tr>
+                <td><strong>Supuestos</strong></td>
+                <td>Disponibilidad de componentes y herramientas de ensamblaje.</td>
+            </tr>
+            <tr>
+                <td><strong>Recursos Asignados</strong></td>
+                <td>Motores, sensores, controladores.</td>
+            </tr>
+            <tr>
+                <td><strong>Duración</strong></td>
+                <td>352 horas (8 semanas)</td>
+            </tr>
+            <tr>
+                <td><strong>Hitos</strong></td>
+                <td>Ensamblaje finalizado el sábado 26 de abril de 2025.</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <table class="table table-bordered mt-4">
+        <thead>
+            <tr>
+                <th colspan="2" class="text-center bg-primary text-white">Detalles del Proyecto - ID#1.2.1.2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Cuenta control ID</strong></td>
+                <td>#1.2</td>
+            </tr>
+            <tr>
+                <td><strong>Última Actualización</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><strong>Responsable</strong></td>
+                <td>Julio Sánchez</td>
+            </tr>
+            <tr>
+                <td><strong>Descripción</strong></td>
+                <td>Hardware</td>
+            </tr>
+            <tr>
+                <td><strong>Criterio de aceptación</strong></td>
+                <td>Componentes de hardware instalados y funcionales.</td>
+            </tr>
+            <tr>
+                <td><strong>Entregables</strong></td>
+                <td>Placa de control, circuitos de potencia, integración con sensores.</td>
+            </tr>
+            <tr>
+                <td><strong>Supuestos</strong></td>
+                <td>Se cuenta con el presupuesto y los proveedores adecuados.</td>
+            </tr>
+            <tr>
+                <td><strong>Recursos Asignados</strong></td>
+                <td>Microcontroladores, baterías, PCB.</td>
+            </tr>
+            <tr>
+                <td><strong>Duración</strong></td>
+                <td>352 horas (8 semanas).</td>
+            </tr>
+            <tr>
+                <td><strong>Hitos</strong></td>
+                <td>Hardware completamente ensamblado el sábado 26 de abril de 2025.</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <table class="table table-bordered mt-4">
+        <thead>
+            <tr>
+                <th colspan="2" class="text-center bg-primary text-white">Detalles del Proyecto - ID#1.2.2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Cuenta control ID</strong></td>
+                <td>#1.2</td>
+            </tr>
+            <tr>
+                <td><strong>Última Actualización</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><strong>Responsable</strong></td>
+                <td>Julio Sánchez</td>
+            </tr>
+            <tr>
+                <td><strong>Descripción</strong></td>
+                <td>Programación y Pruebas</td>
+            </tr>
+            <tr>
+                <td><strong>Criterio de aceptación</strong></td>
+                <td>Código funcional, probado e integrado en el robot.</td>
+            </tr>
+            <tr>
+                <td><strong>Entregables</strong></td>
+                <td>Código fuente documentado, logs de pruebas.</td>
+            </tr>
+            <tr>
+                <td><strong>Supuestos</strong></td>
+                <td>Se cuenta con acceso a entornos de prueba.</td>
+            </tr>
+            <tr>
+                <td><strong>Recursos Asignados</strong></td>
+                <td>Computadoras, software de simulación.</td>
+            </tr>
+            <tr>
+                <td><strong>Duración</strong></td>
+                <td>352 horas (8 semanas).</td>
+            </tr>
+            <tr>
+                <td><strong>Hitos</strong></td>
+                <td>Pruebas funcionales en la semana 18, finalizando el sábado 24 de mayo de 2025.</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <table class="table table-bordered mt-4">
+        <thead>
+            <tr>
+                <th colspan="2" class="text-center bg-primary text-white">Detalles del Proyecto - ID#1.2.2.1</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Cuenta control ID</strong></td>
+                <td>#1.2</td>
+            </tr>
+            <tr>
+                <td><strong>Última Actualización</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><strong>Responsable</strong></td>
+                <td>Julio Sánchez</td>
+            </tr>
+            <tr>
+                <td><strong>Descripción</strong></td>
+                <td>Sistema de Navegación con IA</td>
+            </tr>
+            <tr>
+                <td><strong>Criterio de aceptación</strong></td>
+                <td>Algoritmo de navegación probado y optimizado.</td>
+            </tr>
+            <tr>
+                <td><strong>Entregables</strong></td>
+                <td>Modelos de IA, documentación de pruebas.</td>
+            </tr>
+            <tr>
+                <td><strong>Supuestos</strong></td>
+                <td>Disponibilidad de datasets y hardware de procesamiento.</td>
+            </tr>
+            <tr>
+                <td><strong>Recursos Asignados</strong></td>
+                <td>Frameworks de IA, sensores LiDAR.</td>
+            </tr>
+            <tr>
+                <td><strong>Duración</strong></td>
+                <td>352 horas (8 semanas).</td>
+            </tr>
+            <tr>
+                <td><strong>Hitos</strong></td>
+                <td>Implementación lista el sábado 24 de mayo de 2025.</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <table class="table table-bordered mt-4">
+        <thead>
+            <tr>
+                <th colspan="2" class="text-center bg-primary text-white">Detalles del Proyecto - ID#1.2.2.2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Cuenta control ID</strong></td>
+                <td>#1.2</td>
+            </tr>
+            <tr>
+                <td><strong>Última Actualización</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><strong>Responsable</strong></td>
+                <td>Julio Sánchez</td>
+            </tr>
+            <tr>
+                <td><strong>Descripción</strong></td>
+                <td>Domótica</td>
+            </tr>
+            <tr>
+                <td><strong>Criterio de aceptación</strong></td>
+                <td>Integración del robot con sistemas domóticos validada.</td>
+            </tr>
+            <tr>
+                <td><strong>Entregables</strong></td>
+                <td>Código de comunicación con dispositivos inteligentes.</td>
+            </tr>
+            <tr>
+                <td><strong>Supuestos</strong></td>
+                <td>Se cuenta con acceso a dispositivos IoT.</td>
+            </tr>
+            <tr>
+                <td><strong>Recursos Asignados</strong></td>
+                <td>Sensores, asistentes de voz.</td>
+            </tr>
+            <tr>
+                <td><strong>Duración</strong></td>
+                <td>352 horas (8 semanas).</td>
+            </tr>
+            <tr>
+                <td><strong>Hitos</strong></td>
+                <td>Integración completa el sábado 24 de mayo de 2025.</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <table class="table table-bordered mt-4">
+        <thead>
+            <tr>
+                <th colspan="2" class="text-center bg-primary text-white">Detalles del Proyecto - ID#1.2.3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Cuenta control ID</strong></td>
+                <td>#1.2</td>
+            </tr>
+            <tr>
+                <td><strong>Última Actualización</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><strong>Responsable</strong></td>
+                <td>Julio Sánchez</td>
+            </tr>
+            <tr>
+                <td><strong>Descripción</strong></td>
+                <td>API</td>
+            </tr>
+            <tr>
+                <td><strong>Criterio de aceptación</strong></td>
+                <td>API funcional con endpoints documentados.</td>
+            </tr>
+            <tr>
+                <td><strong>Entregables</strong></td>
+                <td>Documentación de la API, código fuente.</td>
+            </tr>
+            <tr>
+                <td><strong>Supuestos</strong></td>
+                <td>Se cuenta con un servidor para pruebas.</td>
+            </tr>
+            <tr>
+                <td><strong>Recursos Asignados</strong></td>
+                <td>Servidores, bases de datos.</td>
+            </tr>
+            <tr>
+                <td><strong>Duración</strong></td>
+                <td>132 horas (3 semanas).</td>
+            </tr>
+            <tr>
+                <td><strong>Hitos</strong></td>
+                <td>Implementada el sábado 17 de mayo de 2025.</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <table class="table table-bordered mt-4">
+        <thead>
+            <tr>
+                <th colspan="2" class="text-center bg-primary text-white">Detalles del Proyecto - ID#1.2.3.1</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Cuenta control ID</strong></td>
+                <td>#1.2</td>
+            </tr>
+            <tr>
+                <td><strong>Última Actualización</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><strong>Responsable</strong></td>
+                <td>Julio Sánchez</td>
+            </tr>
+            <tr>
+                <td><strong>Descripción</strong></td>
+                <td>Base de Datos</td>
+            </tr>
+            <tr>
+                <td><strong>Criterio de aceptación</strong></td>
+                <td>Base de datos estructurada y operativa.</td>
+            </tr>
+            <tr>
+                <td><strong>Entregables</strong></td>
+                <td>Modelo relacional, scripts SQL, pruebas de carga.</td>
+            </tr>
+            <tr>
+                <td><strong>Supuestos</strong></td>
+                <td>Se cuenta con un gestor de bases de datos adecuado.</td>
+            </tr>
+            <tr>
+                <td><strong>Recursos Asignados</strong></td>
+                <td>Servidores de bases de datos, herramientas de modelado.</td>
+            </tr>
+            <tr>
+                <td><strong>Duración</strong></td>
+                <td>44 horas (1 semana).</td>
+            </tr>
+            <tr>
+                <td><strong>Hitos</strong></td>
+                <td>Implementación finalizada el sábado 17 de mayo de 2025.</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <table class="table table-bordered mt-4">
+        <thead>
+            <tr>
+                <th colspan="2" class="text-center bg-primary text-white">Detalles del Proyecto - ID#1.3.1</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Cuenta control ID</strong></td>
+                <td>#1.3</td>
+            </tr>
+            <tr>
+                <td><strong>Última Actualización</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><strong>Responsable</strong></td>
+                <td>Fredy Alexander Funes</td>
+            </tr>
+            <tr>
+                <td><strong>Descripción</strong></td>
+                <td>Software</td>
+            </tr>
+            <tr>
+                <td><strong>Criterio de aceptación</strong></td>
+                <td>Debe ser funcional, que cumpla con los requisitos que el cliente necesite, fácil de manejar, intuitivo en el manejo y que ayude al crecimiento de la empresa.</td>
+            </tr>
+            <tr>
+                <td><strong>Entregables</strong></td>
+                <td>En forma de código.</td>
+            </tr>
+            <tr>
+                <td><strong>Supuestos</strong></td>
+                <td>En forma de código, con Framework definido.</td>
+            </tr>
+            <tr>
+                <td><strong>Recursos Asignados</strong></td>
+                <td>2 programadores y 2 computadoras.</td>
+            </tr>
+            <tr>
+                <td><strong>Duración</strong></td>
+                <td>264 horas.</td>
+            </tr>
+            <tr>
+                <td><strong>Hitos</strong></td>
+                <td>13 de junio entrega del software.</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <table class="table table-bordered mt-4">
+        <thead>
+            <tr>
+                <th colspan="2" class="text-center bg-primary text-white">Detalles del Proyecto - ID#1.3.2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Cuenta control ID</strong></td>
+                <td>#1.3</td>
+            </tr>
+            <tr>
+                <td><strong>Última Actualización</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><strong>Responsable</strong></td>
+                <td>Fredy Alexander Funes</td>
+            </tr>
+            <tr>
+                <td><strong>Descripción</strong></td>
+                <td>Programación</td>
+            </tr>
+            <tr>
+                <td><strong>Criterio de aceptación</strong></td>
+                <td>Debe ser funcional, que cumpla con los requisitos que el cliente necesite, fácil de manejar, intuitivo en el manejo, y con un código de programación funcional.</td>
+            </tr>
+            <tr>
+                <td><strong>Entregables</strong></td>
+                <td>Código funcional.</td>
+            </tr>
+            <tr>
+                <td><strong>Supuestos</strong></td>
+                <td>En forma de código, Código modular.</td>
+            </tr>
+            <tr>
+                <td><strong>Recursos Asignados</strong></td>
+                <td>4 personas, 3 computadoras.</td>
+            </tr>
+            <tr>
+                <td><strong>Duración</strong></td>
+                <td>264 horas.</td>
+            </tr>
+            <tr>
+                <td><strong>Hitos</strong></td>
+                <td>13 de junio entrega de la programación.</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <table class="table table-bordered mt-4">
+        <thead>
+            <tr>
+                <th colspan="2" class="text-center bg-primary text-white">Detalles del Proyecto - ID#1.3.3.1</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Cuenta control ID</strong></td>
+                <td>#1.3</td>
+            </tr>
+            <tr>
+                <td><strong>Última Actualización</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><strong>Responsable</strong></td>
+                <td>Fredy Alexander Funes</td>
+            </tr>
+            <tr>
+                <td><strong>Descripción</strong></td>
+                <td>API</td>
+            </tr>
+            <tr>
+                <td><strong>Criterio de aceptación</strong></td>
+                <td>Debe ser funcional, que cumpla con los requisitos que la empresa y las áreas conectadas necesiten, fácil de manejar, con comunicación entre las partes involucradas, y con un código de programación funcional.</td>
+            </tr>
+            <tr>
+                <td><strong>Entregables</strong></td>
+                <td>Código funcional, perfecta comunicación entre las áreas.</td>
+            </tr>
+            <tr>
+                <td><strong>Supuestos</strong></td>
+                <td>Código modular.</td>
+            </tr>
+            <tr>
+                <td><strong>Recursos Asignados</strong></td>
+                <td>4 personas, 3 computadoras.</td>
+            </tr>
+            <tr>
+                <td><strong>Duración</strong></td>
+                <td>264 horas.</td>
+            </tr>
+            <tr>
+                <td><strong>Hitos</strong></td>
+                <td>13 de junio entrega de la programación.</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    
+    <script>
+        // Alternar la visibilidad de la imagen EDT
+        document.getElementById('viewEDT').addEventListener('click', function() {
+            const edtWrapper = document.getElementById('edtWrapper');
+            edtWrapper.style.display = edtWrapper.style.display === 'none' ? 'block' : 'none';
+            
+            // Cambiar el texto del botón
+            if (edtWrapper.style.display === 'block') {
+                this.textContent = 'Ocultar EDT del Proyecto';
+                edtWrapper.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            } else {
+                this.textContent = 'Ver EDT del Proyecto';
+            }
+        });
+
+        // Alternar la visibilidad de la imagen Roadmap
+        document.getElementById('viewRoadmap').addEventListener('click', function() {
+            const roadmapWrapper = document.getElementById('roadmapWrapper');
+            roadmapWrapper.style.display = roadmapWrapper.style.display === 'none' ? 'block' : 'none';
+            
+            // Cambiar el texto del botón
+            if (roadmapWrapper.style.display === 'block') {
+                this.textContent = 'Ocultar ROADMAP del Proyecto';
+                roadmapWrapper.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            } else {
+                this.textContent = 'Ver ROADMAP del Proyecto';
+            }
+        });
+    </script>
+</body>
+</html>
