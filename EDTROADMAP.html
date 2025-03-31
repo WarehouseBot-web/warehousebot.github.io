@@ -55,12 +55,12 @@
             </p>
             <button id="viewEDT" class="view-button">Ver EDT del Proyecto</button>
         </div>
-
+    
         <div id="edtWrapper" class="edt-wrapper" style="display: none;">
             <!-- Imagen EDT -->
             <img src="img/EDT.png" alt="EDT del Proyecto WarehouseBot" class="img-fluid">
         </div>
-
+    
         <div class="header">
             <h1>Roadmap del Proyecto WarehouseBot</h1>
             <p class="description">
@@ -68,7 +68,7 @@
             </p>
             <button id="viewRoadmap" class="view-button">Ver ROADMAP del Proyecto</button>
         </div>
-
+    
         <div id="roadmapWrapper" class="edt-wrapper" style="display: none;">
             <!-- Imagen Roadmap -->
             <img src="img/roadmap.png" alt="Roadmap del Proyecto WarehouseBot" class="img-fluid">
@@ -953,6 +953,18 @@
                     link.style.opacity = "0.5"; // Reducir la opacidad
                 });
             }
+        });
+    </script>
+    <script>
+        // Funcionalidad para mostrar y ocultar las imágenes
+        document.getElementById("viewEDT").addEventListener("click", function() {
+            const edtWrapper = document.getElementById("edtWrapper");
+            edtWrapper.style.display = edtWrapper.style.display === "none" ? "block" : "none";
+        });
+    
+        document.getElementById("viewRoadmap").addEventListener("click", function() {
+            const roadmapWrapper = document.getElementById("roadmapWrapper");
+            roadmapWrapper.style.display = roadmapWrapper.style.display === "none" ? "block" : "none";
         });
     </script>
 </body>
