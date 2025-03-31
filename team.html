@@ -32,10 +32,13 @@
                         <a href="motivadores.html" class="nav-link text-white" id="motivadores">Motivadores</a>
                     </li>
                     <li class="nav-item">
-                        <a href="team.html" class="nav-link text-white active-link" id="team">Nuestro equipo</a>
+                        <a href="team.html" class="nav-link text-white" id="team">Nuestro equipo</a>
                     </li>
                     <li class="nav-item">
                         <a href="portafolio.html" class="nav-link text-white" id="portafolio">Portafolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-white" id="login-logout">Login</a>
                     </li>
                 </ul>
             </div>
@@ -163,5 +166,56 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Cambiar la clase activa en los enlaces de navegación
+            let currentLocation = window.location.pathname.split("/").pop();
+            let links = document.querySelectorAll(".nav-link");
+
+            links.forEach(link => {
+                if (link.getAttribute("href") === currentLocation) {
+                    link.classList.add("active-link");
+                }
+            });
+
+            // Verificar si el usuario está logueado
+            let loginLogoutLink = document.getElementById("login-logout");
+
+            if (sessionStorage.getItem("loggedIn")) {
+                // Cambiar el texto a "Cerrar sesión"
+                loginLogoutLink.innerText = "Cerrar sesión";
+
+                // Hacer que el enlace cierre la sesión
+                loginLogoutLink.addEventListener("click", function () {
+                    sessionStorage.removeItem("loggedIn"); // Eliminar la sesión
+                    window.location.href = "index.html"; // Redirigir al inicio
+                });
+
+                // Desbloquear los enlaces de navegación
+                let restrictedLinks = document.querySelectorAll(".nav-item a:not(#inicio):not(#login-logout)");
+                restrictedLinks.forEach(link => {
+                    link.classList.remove("disabled");
+                    link.style.pointerEvents = "auto"; // Hacerlos clickeables
+                    link.style.opacity = "1"; // Restaurar la opacidad
+                });
+            } else {
+                // Si no está logueado, mostrar "Login"
+                loginLogoutLink.innerText = "Login";
+
+                // Enlace de Login redirige al login page
+                loginLogoutLink.addEventListener("click", function () {
+                    window.location.href = "login.html";
+                });
+
+                // Bloquear los enlaces que no son "Inicio" ni "Login"
+                let restrictedLinks = document.querySelectorAll(".nav-item a:not(#inicio):not(#login-logout)");
+                restrictedLinks.forEach(link => {
+                    link.classList.add("disabled");
+                    link.style.pointerEvents = "none"; // Evitar que sean clickeables
+                    link.style.opacity = "0.5"; // Reducir la opacidad
+                });
+            }
+        });
+    </script>
 </body>
 </html>

@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Systemware Solutions</title>
-    <link rel="icon" href="img/icono_logo.ico" type="image/x-icon"> <!-- Favicon agregado -->
+    <link rel="icon" href="img/icono_logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/stylesindex.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header class="bg-dark py-3">
         <nav class="navbar navbar-expand-lg navbar-dark container">
             <div class="logo">
                 <img src="img/logosystemware.png" alt="Logo WarehouseBot" class="img-fluid" style="height: 50px;">
             </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -36,18 +39,19 @@
                         <a href="portafolio.html" class="nav-link text-white" id="portafolio">Portafolio</a>
                     </li>
                     <li class="nav-item">
-                        <a href="login.html" class="nav-link text-white" id="login">Login</a>
+                        <a href="#" class="nav-link text-white" id="login-logout">Login</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
-    
+
     <main class="container my-5">
         <section class="hero text-center p-5 rounded shadow">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h1 class="display-4 text-dark"><span class="warehouse">Warehouse</span><span class="bot">Bot</span></h1>
+                    <h1 class="display-4 text-dark"><span class="warehouse">Warehouse</span><span class="bot">Bot</span>
+                    </h1>
                     <a href="#contenido" class="btn btn-primary btn-conocer">Conocer más</a>
                 </div>
                 <img src="img/robot_fondo.png" alt="Robot WarehouseBot" class="img-fluid">
@@ -76,32 +80,59 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
     <script>
         document.addEventListener("DOMContentLoaded", function () {
+            // Cambiar la clase activa en los enlaces de navegación
             let currentLocation = window.location.pathname.split("/").pop();
             let links = document.querySelectorAll(".nav-link");
-            
+
             links.forEach(link => {
                 if (link.getAttribute("href") === currentLocation) {
                     link.classList.add("active-link");
                 }
             });
-        });
-    </script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            if (!localStorage.getItem("loggedIn")) {
-                // Bloquear todas las pestañas excepto "Inicio" y "Login"
-                let restrictedLinks = document.querySelectorAll(".nav-item a:not(#inicio):not(#login)");
+
+            // Verificar si el usuario está logueado
+            let loginLogoutLink = document.getElementById("login-logout");
+
+            if (sessionStorage.getItem("loggedIn")) {
+                // Cambiar el texto a "Cerrar sesión"
+                loginLogoutLink.innerText = "Cerrar sesión";
+
+                // Hacer que el enlace cierre la sesión
+                loginLogoutLink.addEventListener("click", function () {
+                    sessionStorage.removeItem("loggedIn"); // Eliminar la sesión
+                    window.location.href = "index.html"; // Redirigir al inicio
+                });
+
+                // Desbloquear los enlaces de navegación
+                let restrictedLinks = document.querySelectorAll(".nav-item a:not(#inicio):not(#login-logout)");
+                restrictedLinks.forEach(link => {
+                    link.classList.remove("disabled");
+                    link.style.pointerEvents = "auto"; // Hacerlos clickeables
+                    link.style.opacity = "1"; // Restaurar la opacidad
+                });
+            } else {
+                // Si no está logueado, mostrar "Login"
+                loginLogoutLink.innerText = "Login";
+
+                // Enlace de Login redirige al login page
+                loginLogoutLink.addEventListener("click", function () {
+                    window.location.href = "login.html";
+                });
+
+                // Bloquear los enlaces que no son "Inicio" ni "Login"
+                let restrictedLinks = document.querySelectorAll(".nav-item a:not(#inicio):not(#login-logout)");
                 restrictedLinks.forEach(link => {
                     link.classList.add("disabled");
-                    link.style.pointerEvents = "none"; // Evita que sean clickeables
-                    link.style.opacity = "0.5"; // Reduce la opacidad para indicar que están deshabilitados
+                    link.style.pointerEvents = "none"; // Evitar que sean clickeables
+                    link.style.opacity = "0.5"; // Reducir la opacidad
                 });
             }
         });
     </script>
-    
-    
+
 </body>
+
 </html>
