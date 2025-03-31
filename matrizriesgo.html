@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matriz de riesgos</title>
+    <link rel="icon" href="img/icono_logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/stylesriesgo.css">
+</head>
+
+<body>
+    <header class="bg-dark py-3">
+        <nav class="navbar navbar-expand-lg navbar-dark container">
+            <div class="logo">
+                <img src="img/logosystemware.png" alt="Logo WarehouseBot" class="img-fluid" style="height: 50px;">
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link text-white" id="inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="nosotros.html" class="nav-link text-white" id="nosotros">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="motivadores.html" class="nav-link text-white" id="motivadores">Motivadores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="team.html" class="nav-link text-white" id="team">Nuestro equipo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="portafolio.html" class="nav-link text-white" id="portafolio">Portafolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-white" id="login-logout">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <h1>Matriz de Riesgos de WarehouseBot para almacenes EPA</h1>
+    <h2>1.1 Plataforma Local</h2>
+
+    <table class="tabla">
+        <tr>
+            <th>Proceso</th>
+            <th>Tipo de Riesgo</th>
+            <th>Riesgo</th>
+            <th>Posible Resultado (entonces)</th>
+            <th>Síntoma</th>
+            <th>Probabilidad</th>
+            <th>Impacto</th>
+            <th>Nivel de Prioridad</th>
+            <th>Valor</th>
+            <th>Nivel</th>
+            <th>Estrategia</th>
+            <th>Respuesta</th>
+            <th>Responsable de la acción de respuesta</th>
+        </tr>
+        <tr>
+            <td>1.1.1 Base de datos</td>
+            <td>Técnico</td>
+            <td>Pérdida o corrupción de datos</td>
+            <td>Inaccesibilidad de la información, pérdida de registros críticos</td>
+            <td>Errores en consultas, datos inconsistentes</td>
+            <td>2</td>
+            <td>3</td>
+            <td>6</td>
+            <td>Alto</td>
+            <td>Alto</td>
+            <td>Implementar respaldos automáticos</td>
+            <td>Configurar políticas de backup y recuperación</td>
+            <td>Jimmy Rivas</td>
+        </tr>
+        <tr>
+            <td>1.1.2 Software</td>
+            <td>Técnico</td>
+            <td>Fallas en la integración del software</td>
+            <td>Incompatibilidades entre módulos, errores en ejecución</td>
+            <td>Caídas del sistema, errores de compatibilidad</td>
+            <td>3</td>
+            <td>2</td>
+            <td>6</td>
+            <td>Alto</td>
+            <td>Alto</td>
+            <td>Pruebas continuas de integración</td>
+            <td>Implementar CI/CD y pruebas automatizadas</td>
+            <td>Jimmy Rivas</td>
+        </tr>
+        <tr>
+            <td>1.1.2.1 IA</td>
+            <td>Técnico</td>
+            <td>Sesgo en los modelos de IA</td>
+            <td>Decisiones erróneas, desempeño ineficiente</td>
+            <td>Resultados inconsistentes, errores en predicciones</td>
+            <td>3</td>
+            <td>2</td>
+            <td>6</td>
+            <td>Alto</td>
+            <td>Alto</td>
+            <td>Mejorar calidad del dataset</td>
+            <td>Implementar validación de datos y reentrenamiento periódico</td>
+            <td>Jimmy Rivas</td>
+        </tr>
+        <tr>
+            <td>1.1.3 Hardware</td>
+            <td>Técnico</td>
+            <td>Fallos en componentes físicos</td>
+            <td>Interrupción del sistema, costos de reparación</td>
+            <td>Sobrecalentamiento, errores intermitentes</td>
+            <td>2</td>
+            <td>3</td>
+            <td>6</td>
+            <td>Alto</td>
+            <td>Alto</td>
+            <td>Implementar mantenimiento preventivo</td>
+            <td>Programar revisiones periódicas y monitoreo en tiempo real</td>
+            <td>Jimmy Rivas</td>
+        </tr>
+        <tr>
+            <td>1.1.4 Redes</td>
+            <td>Técnico</td>
+            <td>Interrupción en la conectividad</td>
+            <td>Caída del sistema, pérdida de comunicación</td>
+            <td>Latencia alta, desconexiones frecuentes</td>
+            <td>3</td>
+            <td>3</td>
+            <td>9</td>
+            <td>Crítico</td>
+            <td>Crítico</td>
+            <td>Mejorar redundancia en redes</td>
+            <td>Configurar balanceo de carga y redundancia de enlaces</td>
+            <td>Jimmy Rivas</td>
+        </tr>
+        <tr>
+            <td>1.1.4.1 Comunicaciones</td>
+            <td>Técnico</td>
+            <td>Pérdida de comunicación en el sistema</td>
+            <td>Fallos en la transmisión de datos, pérdida de control del robot</td>
+            <td>Retrasos en la transmisión, pérdida de paquetes de datos</td>
+            <td>2</td>
+            <td>3</td>
+            <td>6</td>
+            <td>Alto</td>
+            <td>Alto</td>
+            <td>Usar protocolos de comunicación estandarizados</td>
+            <td>Implementar redundancia y pruebas de estrés</td>
+            <td>Jimmy Rivas</td>
+        </tr>
+    </table>
+
+    <h2>1.2 Robot autónomo</h2>
+
+    <table class="tabla">
+        <tr>
+            <th>Proceso</th>
+            <th>Tipo de Riesgo</th>
+            <th>Riesgo</th>
+            <th>Posible Resultado (entonces)</th>
+            <th>Síntoma</th>
+            <th>Probabilidad</th>
+            <th>Impacto</th>
+            <th>Nivel de Prioridad</th>
+            <th>Valor</th>
+            <th>Nivel</th>
+            <th>Estrategia</th>
+            <th>Respuesta</th>
+            <th>Responsable de la acción de respuesta</th>
+        </tr>
+        <tr>
+            <td>1.2.1 Diseño</td>
+            <td>Técnico</td>
+            <td>Errores en especificaciones</td>
+            <td>Retrasos en el proyecto, rediseños costosos</td>
+            <td>Fallas en simulaciones o prototipos</td>
+            <td>2</td>
+            <td>3</td>
+            <td>6</td>
+            <td>Alto</td>
+            <td>Alto</td>
+            <td>Revisar requerimientos con expertos</td>
+            <td>Implementar revisiones periódicas</td>
+            <td>Julio Sanchez</td>
+        </tr>
+        <tr>
+            <td>1.2.1.1 Robótica</td>
+            <td>Operativo</td>
+            <td>Mal ensamblaje de piezas</td>
+            <td>Fallo en la estructura, riesgo de accidente</td>
+            <td>Vibraciones o desajustes</td>
+            <td>3</td>
+            <td>3</td>
+            <td>9</td>
+            <td>Crítico</td>
+            <td>Crítico</td>
+            <td>Capacitación en ensamblaje</td>
+            <td>Inspecciones de calidad en cada fase</td>
+            <td>Julio Sanchez</td>
+        </tr>
+        <tr>
+            <td>1.2.1.2 Componentes</td>
+            <td>Técnico</td>
+            <td>Fallos en selección de componentes electrónicos</td>
+            <td>Mal funcionamiento del robot o sobrecostos</td>
+            <td>Sobrecalentamiento o ineficiencia energética</td>
+            <td>2</td>
+            <td>2</td>
+            <td>4</td>
+            <td>Medio</td>
+            <td>Medio</td>
+            <td>Pruebas y validaciones previas</td>
+            <td>Documentar estándares de calidad</td>
+            <td>Julio Sanchez</td>
+        </tr>
+        <tr>
+            <td>1.2.2 Programación y Pruebas</td>
+            <td>Software</td>
+            <td>Errores en algoritmos de control</td>
+            <td>Mal desempeño del sistema, comportamientos inesperados</td>
+            <td>Resultados inconsistentes en pruebas</td>
+            <td>3</td>
+            <td>3</td>
+            <td>9</td>
+            <td>Crítico</td>
+            <td>Crítico</td>
+            <td>Implementar pruebas unitarias y de integración</td>
+            <td>Revisar código con metodologías ágiles</td>
+            <td>Julio Sanchez</td>
+        </tr>
+        <tr>
+            <td>1.2.2.1 Sistema de Navegación IA</td>
+            <td>Algoritmo</td>
+            <td>Dificultad en reconocimiento de patrones</td>
+            <td>Navegación ineficiente, colisiones</td>
+            <td>Desviaciones en trayectorias</td>
+            <td>3</td>
+            <td>2</td>
+            <td>6</td>
+            <td>Alto</td>
+            <td>Alto</td>
+            <td>Optimizar dataset de entrenamiento</td>
+            <td>Mejorar modelo de inteligencia artificial</td>
+            <td>Julio Sanchez</td>
+        </tr>
+        <tr>
+            <td>1.2.2.2 Domótica</td>
+            <td>Integración</td>
+            <td>Incompatibilidad con dispositivos externos</td>
+            <td>No se puede conectar con otros sistemas</td>
+            <td>Dispositivos no responden</td>
+            <td>2</td>
+            <td>2</td>
+            <td>4</td>
+            <td>Medio</td>
+            <td>Medio</td>
+            <td>Usar estándares de comunicación abiertos</td>
+            <td>Pruebas con múltiples dispositivos</td>
+            <td>Julio Sanchez</td>
+        </tr>
+    </table>
+
+    <h2>1.3 Plataforma Web/Móvil</h2>
+
+    <table class="tabla">
+        <tr>
+            <th>Proceso</th>
+            <th>Tipo de Riesgo</th>
+            <th>Riesgo</th>
+            <th>Posible Resultado (entonces)</th>
+            <th>Síntoma</th>
+            <th>Probabilidad</th>
+            <th>Impacto</th>
+            <th>Nivel de Prioridad</th>
+            <th>Valor</th>
+            <th>Nivel</th>
+            <th>Estrategia</th>
+            <th>Respuesta</th>
+            <th>Responsable de la acción de respuesta</th>
+        </tr>
+        <tr>
+            <td>1.3.1 Interfaz Grafica</td>
+            <td>Técnico / Usabilidad</td>
+            <td>Deficiencia en la experiencia de usuario (UX)</td>
+            <td>Mala interacción con el sistema, confusión en los usuarios</td>
+            <td>Quejas de los usuarios, baja eficiencia en tareas</td>
+            <td>2</td>
+            <td>2</td>
+            <td>4</td>
+            <td>Bajo</td>
+            <td>Bajo</td>
+            <td>Diseñar con principios de usabilidad</td>
+            <td>Implementar pruebas de UX y encuestas de retroalimentación</td>
+            <td>Freddy</td>
+        </tr>
+        <tr>
+            <td>1.3.2 Desarrollo</td>
+            <td>Gestión</td>
+            <td>Retrasos en la entrega de funcionalidades</td>
+            <td>Incumplimiento de cronogramas, afectación al proyecto</td>
+            <td>Múltiples cambios de fechas, acumulación de tareas pendientes</td>
+            <td>3</td>
+            <td>3</td>
+            <td>9</td>
+            <td>Crítico</td>
+            <td>Crítico</td>
+            <td>Aplicar metodologías ágiles</td>
+            <td>Implementar SCRUM y revisiones iterativas</td>
+            <td>Freddy</td>
+        </tr>
+        <tr>
+            <td>1.3.2.1 Integración</td>
+            <td>Técnico</td>
+            <td>Errores en la integración con otros sistemas</td>
+            <td>Fallos en la interoperabilidad, sistemas inoperantes</td>
+            <td>Incompatibilidades entre plataformas, fallos en ejecución</td>
+            <td>2</td>
+            <td>3</td>
+            <td>6</td>
+            <td>Alto</td>
+            <td>Alto</td>
+            <td>Pruebas de integración automatizadas</td>
+            <td>Implementar API estandarizadas y pruebas de compatibilidad</td>
+            <td>Freddy</td>
+        </tr>
+    </table>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Cambiar la clase activa en los enlaces de navegación
+            let currentLocation = window.location.pathname.split("/").pop();
+            let links = document.querySelectorAll(".nav-link");
+
+            links.forEach(link => {
+                if (link.getAttribute("href") === currentLocation) {
+                    link.classList.add("active-link");
+                }
+            });
+
+            // Verificar si el usuario está logueado
+            let loginLogoutLink = document.getElementById("login-logout");
+
+            if (sessionStorage.getItem("loggedIn")) {
+                // Cambiar el texto a "Cerrar sesión"
+                loginLogoutLink.innerText = "Cerrar sesión";
+
+                // Hacer que el enlace cierre la sesión
+                loginLogoutLink.addEventListener("click", function () {
+                    sessionStorage.removeItem("loggedIn"); // Eliminar la sesión
+                    window.location.href = "index.html"; // Redirigir al inicio
+                });
+
+                // Desbloquear los enlaces de navegación
+                let restrictedLinks = document.querySelectorAll(".nav-item a:not(#inicio):not(#login-logout)");
+                restrictedLinks.forEach(link => {
+                    link.classList.remove("disabled");
+                    link.style.pointerEvents = "auto"; // Hacerlos clickeables
+                    link.style.opacity = "1"; // Restaurar la opacidad
+                });
+            } else {
+                // Si no está logueado, mostrar "Login"
+                loginLogoutLink.innerText = "Login";
+
+                // Enlace de Login redirige al login page
+                loginLogoutLink.addEventListener("click", function () {
+                    window.location.href = "login.html";
+                });
+
+                // Bloquear los enlaces que no son "Inicio" ni "Login"
+                let restrictedLinks = document.querySelectorAll(".nav-item a:not(#inicio):not(#login-logout)");
+                restrictedLinks.forEach(link => {
+                    link.classList.add("disabled");
+                    link.style.pointerEvents = "none"; // Evitar que sean clickeables
+                    link.style.opacity = "0.5"; // Reducir la opacidad
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

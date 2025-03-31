@@ -1,0 +1,51 @@
+/* Navbar */
+header {
+    background-color: #343a40;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0;
+    /* Elimina el margen exterior */
+    width: 100%;
+    /* Asegura que ocupe todo el ancho de la pantalla */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* Asegura que ocupe todo el ancho */
+    padding-left: 20px;
+    /* Añade espacio a la izquierda */
+    padding-right: 20px;
+    /* Añade espacio a la derecha */
+}
+
+.navbar-nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar-nav li {
+    margin-left: 20px;
+}
+
+.navbar-nav li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+/* Efecto hover */
+.navbar-nav li a:hover {
+    color: #06d2dd !important;
+    font-weight: bold;
+}
+
+.navbar-nav li a.active-link {
+    color: #06d2dd !important;
+    font-weight: bold;
+}
