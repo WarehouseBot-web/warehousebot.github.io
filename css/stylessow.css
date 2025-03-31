@@ -1,0 +1,171 @@
+/* Asegurar que el body y html ocupen todo el espacio */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Se asegura que el contenido ocupe todo el espacio disponible */
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Estilo para la sección de portafolio SOW */
+.portfolio-projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.project-card {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 280px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 15px;
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    background-color: #06d2dd;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.project-card a:hover {
+    background-color: #004f57;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Media Queries */
+@media (max-width: 767px) {
+    .project-card {
+        width: 100%;
+    }
+}
+
+/* Navbar */
+header {
+    background-color: #343a40;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar-nav li {
+    margin-left: 20px;
+}
+
+.navbar-nav li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+/* Efecto hover */
+.navbar-nav li a:hover {
+    color: #06d2dd !important;
+    font-weight: bold;
+}
+
+.navbar-nav li a.active-link {
+    color: #06d2dd !important;
+    font-weight: bold;
+}
+
+/* Footer siempre abajo */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    margin-top: auto; /* Empuja el footer hacia el fondo */
+}
+
+/* Responsividad */
+@media (min-width: 768px) {
+    .portfolio-projects {
+        justify-content: space-around;
+    }
+
+    .project-card {
+        width: 280px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .portfolio-description {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .portfolio-projects {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .portfolio-description {
+        font-size: 18px;
+    }
+}
+
+/* Hacer que el body y el footer estén organizados como un contenedor flex */
+body {
+    display: flex;
+    flex-direction: column;
+}
