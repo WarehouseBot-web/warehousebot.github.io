@@ -28,16 +28,32 @@
             event.preventDefault();
             const username = document.getElementById("username").value;
             const password = document.getElementById("password").value;
-
+    
+            // Verificación de credenciales para cada usuario
             if (username === "Docente" && password === "ugb2025") {
+                sessionStorage.setItem("loggedIn", "true"); // Guarda la sesión en sessionStorage
+                window.location.href = "index.html"; // Redirige a la página principal
+            } else if (username === "administrador" && password === "admin2025$") {
+                sessionStorage.setItem("loggedIn", "true"); // Guarda la sesión en sessionStorage
+                window.location.href = "index.html"; // Redirige a la página principal
+            } else if (username === "Julio" && password === "julio2025#") {
+                sessionStorage.setItem("loggedIn", "true"); // Guarda la sesión en sessionStorage
+                window.location.href = "index.html"; // Redirige a la página principal
+            } else if (username === "Jimmy" && password === "jimmy2025@") {
+                sessionStorage.setItem("loggedIn", "true"); // Guarda la sesión en sessionStorage
+                window.location.href = "index.html"; // Redirige a la página principal
+            } else if (username === "Fredy" && password === "fredy2025!") {
+                sessionStorage.setItem("loggedIn", "true"); // Guarda la sesión en sessionStorage
+                window.location.href = "index.html"; // Redirige a la página principal
+            } else if (username === "invitado" && password === "invitado2025") {
                 sessionStorage.setItem("loggedIn", "true"); // Guarda la sesión en sessionStorage
                 window.location.href = "index.html"; // Redirige a la página principal
             } else {
                 document.getElementById("error-message").innerText = "Credenciales incorrectas. Inténtalo de nuevo.";
             }
         });
-
     </script>
+    
 </body>
 
 </html>
