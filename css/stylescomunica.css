@@ -1,12 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    margin: 20px;
+}
+
+.tabla {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 90%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
 /* Navbar */
 header {
     background-color: #343a40;
     padding-top: 10px;
     padding-bottom: 10px;
-    margin: 0;
-    /* Elimina el margen exterior */
     width: 100%;
-    /* Asegura que ocupe todo el ancho de la pantalla */
 }
 
 .navbar {
@@ -14,11 +47,8 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    /* Asegura que ocupe todo el ancho */
     padding-left: 20px;
-    /* Añade espacio a la izquierda */
     padding-right: 20px;
-    /* Añade espacio a la derecha */
 }
 
 .navbar-nav {
@@ -40,12 +70,68 @@ header {
 }
 
 /* Efecto hover */
-.navbar-nav li a:hover {
+.navbar-nav li a:hover, .navbar-nav li a.active-link {
     color: #06d2dd !important;
     font-weight: bold;
 }
 
-.navbar-nav li a.active-link {
-    color: #06d2dd !important;
+/* Estilos para la tabla */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table th, .table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+    /* Bordes ligeros para las celdas */
+}
+
+.table th {
+    background-color: #f2f2f2;
+    color: black;
+    font-size: 16px;
+    /* Estilo para los encabezados */
+}
+
+.table td {
+    font-size: 14px;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f9f9f9;
+    /* Fila alterna con color gris claro */
+}
+
+.table tr:hover {
+    background-color: #ddd;
+    /* Resaltado de fila al pasar el mouse */
+}
+
+.table td, .table th {
+    padding: 12px;
+}
+
+.table .tabla {
+    width: 100%;
+    border: 1px solid #ddd;
+    /* Borde alrededor de la tabla */
+}
+
+.table .tabla th, .table .tabla td {
+    padding: 15px;
+    /* Espaciado dentro de las celdas */
+}
+
+.table .tabla th {
+    background-color: #343a40;
+    color: white;
     font-weight: bold;
+    text-align: center;
+}
+
+.table .tabla td {
+    text-align: left;
 }
