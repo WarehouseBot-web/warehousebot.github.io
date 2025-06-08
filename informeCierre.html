@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WarehouseBot - Oferta Económica</title>
+    <link rel="stylesheet" href="css/styleinforme.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="img/icono_logo.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header class="bg-dark py-3">
+        <nav class="navbar navbar-expand-lg navbar-dark container">
+            <div class="logo">
+                <img src="img/logosystemware.png" alt="Logo WarehouseBot" class="img-fluid" style="height: 50px;">
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link text-white" id="inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="nosotros.html" class="nav-link text-white" id="nosotros">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="motivadores.html" class="nav-link text-white" id="motivadores">Motivadores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="team.html" class="nav-link text-white" id="team">Nuestro equipo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="portafolio.html" class="nav-link text-white" id="portafolio">Portafolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-white" id="login-logout">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container my-5">
+        <h1 class="text-center mb-4">Informe de Cierre</h1>
+        <h3>Balance de gastos y facturas</h3>
+        <div class="pdf-viewer text-center">
+            <iframe src="doc/Balance de gastos y facturas (1).pdf" width="100%" height="600px" style="border: none;"></iframe>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 WarehouseBot. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let currentLocation = window.location.pathname.split("/").pop();
+            let links = document.querySelectorAll(".nav-link");
+
+            links.forEach(link => {
+                if (link.getAttribute("href") === currentLocation) {
+                    link.classList.add("active-link");
+                }
+            });
+
+            let loginLogoutLink = document.getElementById("login-logout");
+
+            if (sessionStorage.getItem("loggedIn")) {
+                loginLogoutLink.innerText = "Cerrar sesión";
+                loginLogoutLink.addEventListener("click", function () {
+                    sessionStorage.removeItem("loggedIn");
+                    window.location.href = "index.html";
+                });
+
+                let restrictedLinks = document.querySelectorAll(".nav-item a:not(#inicio):not(#login-logout)");
+                restrictedLinks.forEach(link => {
+                    link.classList.remove("disabled");
+                    link.style.pointerEvents = "auto";
+                    link.style.opacity = "1";
+                });
+            } else {
+                loginLogoutLink.innerText = "Login";
+                loginLogoutLink.addEventListener("click", function () {
+                    window.location.href = "login.html";
+                });
+
+                let restrictedLinks = document.querySelectorAll(".nav-item a:not(#inicio):not(#login-logout)");
+                restrictedLinks.forEach(link => {
+                    link.classList.add("disabled");
+                    link.style.pointerEvents = "none";
+                    link.style.opacity = "0.5";
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
